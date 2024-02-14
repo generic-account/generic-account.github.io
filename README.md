@@ -1,4 +1,6 @@
-# Introduction
+# Esperanto Morphological Tokenization
+
+## Introduction
 #### Esperanto Background
 Esperanto is an agglutinative constructed international auxiliary language, boasting a unique and regular set of grammatical features along with the largest speaker base of any constructed language. While it has its quirks which we will soon note, its word structure is incredibly regular, fitting only a handful of common patterns, making it uniquely suited to morphological segmentation, tokenization, and subword modeling, the process of splitting up words based on their structure for use in natural language processing models. We investigate the impact of morphological tokenization on the translation quality of English to Esperanto translations, using Fairseq, a simple sequence modeling toolkit built by Facebook. [^1]
 
@@ -19,7 +21,7 @@ Esperanto, however, is much more amenable to the algorithmic segmentation of its
 Furthermore, Esperanto also employs a relatively small set of affixes that can be applied before or after roots, but always before endings. For example, the affix “ig” means “to cause”, and it tends to come right before a verb ending, such as in “klarigi”, meaning “to make clear” (“klaro” = clear, “ig” = to make, “i” = verb ending). The simplest example is "mal-", indicating the opposite, which can be applied to any part of speech. "Nova" is new, so "malnova" is old. While this is a very simple example, the affix system is extensive yet simple and regular, allowing the expression of countless new words with only small tweaks. And because this set of affixes is relatively small and predefined (no new affixes are being created), it is much easier to algorithmically separate words into their morphemes, at least approximately.
 
 ---
-# Esperanto Tokenization Algorithm
+## Esperanto Tokenization Algorithm
 
 To tokenize the Esperanto sentences, the general pipeline is to first regularize the sentences, then to split the sentences into words to each be segmented. Each word will then be segmented and tagged, the unique tags will be reduced to a limited set, the segmentations will be simplified, root tags are tokenized with a BPE tokenizer, and special markers added.
 
@@ -57,7 +59,7 @@ At a large scale, it would be very computationally expensive to segment and tag 
 Finally, the segmentations and tags for each sentence are collapsed into one, delimited by “点” and “分” (meaning dot (period) and divide (space) in Chinese, respectively). Every segment will be followed by a Chinese character representing its tag type (AFFIX, ENDING, and SPECIAL mapping to "接", "終", and "特", respectively). Roots, after being passed into the BPE tokenizer and segmented according to this algorithm, receive no marking. Roots or segments of roots followed by a space will be given the tag ”空" instead, to indicate where spaces should be placed in the un-segmentation process. This collapses the information previously stored in two lists (the list of the segments of a word, and a list of the corresponding tags) into one.
 
 ---
-# Experimental Setup
+## Experimental Setup
 
 First, the Esperanto corpus is morphologically tokenized, according to the process described above. The corpus is also tokenized with a standard BPE tokenization algorithm to serve as a reference to compare our experimental model.
 
@@ -70,12 +72,12 @@ To train the models, we use data from the English to Esperanto Tatoeba corpus, a
 The models were trained on Google Colab, using T4 GPUs on a budget of $10 (100 compute units). As the initialization and training process is somewhat random, we trained and tested 5 models for each type. This allows us to measure and analyze the impacts of the tokenization algorithm itself while mitigating some of the randomness inherent to the process. However, this is a slight limitation of the project, as ideally, we would be able to run more tests to better filter out the effect of randomness.
 
 ---
-# Results
+## Results
 
 After training and validating each type of model (English to Esperanto with morphological tokenizer, English to Esperanto with BPE tokenizer, Esperanto to Esperanto with morphological tokenizer, and Esperanto to English with BPE tokenizer), we found no statistically significant difference in the performance of the morphologically tokenized models compared to the BPE tokenized models, all outputting about a 54 BLEU score (a measure of how well the model's output translations match up with the official outputs from the Tatoeba corpus) plus or minus less than 1 BLEU.[^5] This is about what one would expect from the random influences of which seeds we used. Graphs of loss and BLEU scores for the iterations of each model over time will be added soon.
 
  ---
-# Conclusion 
+## Conclusion 
 
 The results of this experiment hint at the robustness of the BPE tokenization algorithm, the unintuitiveness of tokenization and how it impacts models, but also the need for more study in this area. With a simple algorithm that requires little to no specific tuning for the target language, BPE performs similarly to an algorithm specially designed to fit the morphology of Esperanto, reinforcing the validity of this often-used algorithm in NLP.
 
@@ -84,7 +86,7 @@ It seems quite intuitive that developing an algorithm to specifically morphologi
 There are countless other variables that could impact the results of this experiment, from the language pair to the dataset size and the training time, plus a whole range of model hyperparameters. While the benefit of morphological tokenization to Esperanto transformer models may be relatively small, it is entirely possible that morphological tokenization would yield better results when applied to English or German, even though it would be harder to program such tokenizers for less regular languages. Additionally, it’s likely that the morphological tokenization has some effect, good or bad, on the final BLEU scores, but that we were not able to uncover it with our limited resources. Perhaps training more models or training them for longer would unveil some different BLEU upper-bound. In addition to this, there are many hyperparameters, high-level knobs and levers we can tweak when training the models, that may affect the effectiveness of morphological tokenization. Without more experimentation, it’s not possible to know.
 
 ---
-# References
+## References
 [^1]: [fairseq: A Fast, Extensible Toolkit for Sequence Modeling]([https://aclanthology.org/N19-4009](https://aclanthology.org/N19-4009)) (Ott et al., NAACL 2019)
 [^2]:[https://github.com/hplt-project/sacremoses](https://github.com/hplt-project/sacremoses)
 [^3]:[https://github.com/tguinard/EsperantoWordSegmenter](https://github.com/tguinard/EsperantoWordSegmenter)
