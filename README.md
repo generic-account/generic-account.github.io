@@ -69,12 +69,28 @@ The building and training of the models themselves is done with Fairseq. The mod
 
 To train the models, we use data from the English to Esperanto Tatoeba corpus, a dataset of about 300,000 parallel sentences (one sentence in English, and its translation in Esperanto), taken from the language learning site tatoeba.org.[^4] Users of the site can input their own new sentences and translations, which can sometimes introduce errors and unclean data (e.g. sentences in the Esperanto sentences file that are in English, Chinese, contain non-Esperanto characters, or are incorrect translations). These out-of-place translations only account for an extremely tiny percentage of the entire data (there are only a handful of misplaced sentences), so they likely have almost no impact on the final results. It is also interesting to note that there are many repeated English sentences that have multiple different Esperanto translations, and vice-versa. This is useful as it helps the models generalize by seeing the many possible different translations.
 
-The models were trained on Google Colab, using T4 GPUs on a budget of $10 (100 compute units). As the initialization and training process is somewhat random, we trained and tested 5 models for each type. This allows us to measure and analyze the impacts of the tokenization algorithm itself while mitigating some of the randomness inherent to the process. However, this is a slight limitation of the project, as ideally, we would be able to run more tests to better filter out the effect of randomness.
+As the initialization and training process is somewhat random, we trained and tested 3 models for each type of model. This allows us to measure and analyze the impacts of the tokenization algorithm itself while mitigating some of the randomness inherent to the process. However, this is a slight limitation of the project, as ideally, we would be able to run more tests to better filter out the effect of randomness.
 
 ---
 ## Results
 
-After training and validating each type of model (English to Esperanto with morphological tokenizer, English to Esperanto with BPE tokenizer, Esperanto to Esperanto with morphological tokenizer, and Esperanto to English with BPE tokenizer), we found no statistically significant difference in the performance of the morphologically tokenized models compared to the BPE tokenized models, all outputting about a 54 BLEU score (a measure of how well the model's output translations match up with the official outputs from the Tatoeba corpus) plus or minus less than 1 BLEU.[^5] This is about what one would expect from the random influences of which seeds we used. Graphs of loss and BLEU scores for the iterations of each model over time will be added soon.
+#### Average BLEU Scores, Aggregated Data:
+|| BPE Tokenizer       | Semantic Tokenizer|
+|----------|---------------------|--------------------|
+| **EN -> EO** | 51.69666667         | 51.42              |
+| **EO -> EN** | 58.45               | 58.38              |
+
+#### Raw Data:
+
+| | Trial 1 (seed = 1000) BLEU Score | Trial 1 Training Time (sec) | Trial 1 Epochs | Trial 2 (seed = 1001) BLEU Score | Trial 2 Training Time (sec) | Trial 2 Epochs | Trial 3 (seed = 1002) BLEU Score | Trial 3 Training Time (sec) | Trial 3 Epochs | Average BLEU Score | Average Training Time (sec) | Average Epochs |  
+| :-----------------------------: | :------------------------------: | :-------------------------: | :------------: | :------------------------------: | :-------------------------: | :------------: | :------------------------------: | :-------------------------: | :------------: | :----------------: | :-------------------------: | :------------: |  
+| **EN -> EO BPE Tokenizer** | 51.65 | 2682.6 | 28 | 51.51 | 3554.6 | 37 | 51.93 | 3931.3 | 41 | 51.69666667 | 3389.5 | 35.33333333 |  
+| **EN -> EO Semantic Tokenizer** | 51.52 | 3437.4 | 27 | 51.52 | 3293.8 | 31 | 51.22 | 3297.8 | 31 | 51.42 | 3343 | 29.66666667 |  
+| **EO -> EN BPE Tokenizer** | 58.33 | 3931.8 | 41 | 58.53 | 6226.5 | 65 | 58.49 | 4762.1 | 50 | 58.45 | 4973.466667 | 52 |  
+| **EO -> EN Semantic Tokenizer** | 58.47 | 6256.4 | 60 | 58.01 | 3868.7 | 37 | 58.66 | 5093.1 | 49 | 58.38 | 5072.733333 | 48.66666667 |
+
+#### Analysis
+After training and validating each type of model (English to Esperanto with morphological tokenizer, English to Esperanto with BPE tokenizer, Esperanto to Esperanto with morphological tokenizer, and Esperanto to English with BPE tokenizer), we found no statistically significant difference in the performance of the morphologically tokenized models compared to the BPE tokenized models, all outputting about the same BLEU score (a measure of how well the model's output translations match up with the official outputs from the Tatoeba corpus, with higher being better).[^5] For English to Esperanto (EN -> EO), both average BLEU scores were about 51 plus or minus less than one BLEU, and for Esperanto to English (EO -> EN), both average scores were about 58, plus or minus less than one BLEU. It is interesting to note that our semantic tokenizer performed very slightly worse in these tests, however this is about what one would expect from the random influences of which seeds we used and is not statistically significant.
 
  ---
 ## Conclusion 
@@ -92,3 +108,5 @@ There are countless other variables that could impact the results of this experi
 [^3]:[https://github.com/tguinard/EsperantoWordSegmenter](https://github.com/tguinard/EsperantoWordSegmenter)
 [^4]:[https://opus.nlpl.eu/Tatoeba/en&eo/v2023-04-12/Tatoeba](https://github.com/tguinard/EsperantoWordSegmenter)
 [^5]: [BLEU: a Method for Automatic Evaluation of Machine Translation]([https://aclanthology.org/P02-1040.pdf]([https://aclanthology.org/P02-1040.pdf)) (Papineni et al., NAACL 2002)
+
+
