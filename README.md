@@ -125,8 +125,6 @@ As the initialization and training process is somewhat random, we trained and te
 | **EN -> EO** | 51.69666667         | 51.42              |
 | **EO -> EN** | 58.45               | 58.38              |
 
-<br>
-
 #### Raw Data:
 
 | | Trial 1 (seed = 1000) BLEU Score | Trial 1 Training Time (sec) | Trial 1 Epochs | Trial 2 (seed = 1001) BLEU Score | Trial 2 Training Time (sec) | Trial 2 Epochs | Trial 3 (seed = 1002) BLEU Score | Trial 3 Training Time (sec) | Trial 3 Epochs | Average BLEU Score | Average Training Time (sec) | Average Epochs |  
