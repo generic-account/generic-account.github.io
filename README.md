@@ -34,17 +34,17 @@ The segmentation itself is done with EsperantoWordSegmenter, a tool that algorit
 #### Tag Reduction
 Tag reduction is a very important step, as the EsperantoWordSegmenter algorithm distinguishes from a number of grammatical tags that are not relevant to this project. The types of tags fall into four broad categories, standalone words (special words like correlatives, numbers, or pronouns), affixes (which the program divides into NounSuffix, NounPrefix, PeopleAnimalPrefix, AdjectiveSuffix, etc…), roots (including adjectives, nouns, and verbs), mid-word endings including “o”, a glue letter that serves to connect Esperanto words like in the case of “lampocilindro lamp'o'cilindr'o”, and endings which are split up into adjective endings, noun endings, pronoun endings, etc… The primary requirement for the tagging system is that it is unambiguous, such that a line of text can be segmented, tagged, and returned to its exact form with spaces inserted correctly. As such, we simply the many tag distinctions of EsperantoWordSegmenter into only four types of tags, “SPECIAL”, “ROOT”, “AFFIX”, and “ENDING”. “SPECIAL” includes standalone words and punctuation, “ROOT” includes any root, “AFFIX” includes any prefix or suffix, and “ENDING” only includes the very small set of endings in Esperanto. To convert the tags from EsperantoWordSegmenter to this smaller set, we simply apply a mapping of the more complex tags to the distinct tags. Then, any repeated “ROOT” tags are collapsed into one “ROOT”, with (“ROOT”, ”AFFIX”, ”ROOT”) patterns also being reduced to “ROOT”, in order to aid the further segmentation of these subwords by the BPE tokenizer. Furthermore, aberrant patterns such as (“AFFIX”, “AFFIX”) or just one (“ENDING”,) are reduced to one “ROOT”, as these are often names and other unique words that did not segment properly. After this process is done, every word fits one of only a few segmentation patterns, seen below:
 
-- ('SPECIAL',) &emsp; &emsp; &emsp; &emsp; &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  ex: "mi" = "mi" (I or me)
-- ('SPECIAL', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp;   &emsp; &emsp; &emsp; &emsp; &nbsp; ex: "mia" = "mi_a" (my)
-- ('ROOT',) &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp; ex: "lichtstein" = "lichtstein" (Lichtstein (a proper noun))
-- ('ROOT', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &nbsp;  ex: "bona" = "bon_a" (good)
-- ('ROOT', 'AFFIX', 'ENDING')  &emsp; &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ex: "bonega" = "bon_eg_a" (great)
-- ('AFFIX', 'ROOT', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp; ex: "malbona" = "mal_bon_a" (bad)
-- ('AFFIX', 'ROOT', 'AFFIX', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &nbsp; ex: "malbonega" = "mal_bon_eg_a" (very bad)
-- ('ROOT', 'AFFIX', 'AFFIX', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &nbsp; ex: "bonigilo" = "bon_ig_il_o" (an enhancer)
-- ('AFFIX', 'AFFIX', 'ROOT', 'AFFIX', 'ENDING') &emsp; ex: "malbonigilo" = "mal_bon_ig_il_o" (a detractor)
-- ('AFFIX', 'ROOT', 'AFFIX', 'AFFIX', 'ENDING') &emsp; ex: "miskomunistestro" = "mis_komun_ist_estr_o" (an anti-communist leader)
-- ('AFFIX', 'AFFIX', 'ROOT', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &nbsp; ex: "fieksedzo" = "fi_eks_edz_o" (a wicked ex-husband)
+- ('SPECIAL',) &emsp; &emsp; ex: "mi" = "mi" (I or me)
+- ('SPECIAL', 'ENDING') &emsp; &emsp; ex: "mia" = "mi_a" (my)
+- ('ROOT',) &emsp; &emsp; ex: "lichtstein" = "lichtstein" (Lichtstein (a proper noun))
+- ('ROOT', 'ENDING') &emsp; &emsp; ex: "bona" = "bon_a" (good)
+- ('ROOT', 'AFFIX', 'ENDING') &emsp; &emsp; ex: "bonega" = "bon_eg_a" (great)
+- ('AFFIX', 'ROOT', 'ENDING') &emsp; &emsp; ex: "malbona" = "mal_bon_a" (bad)
+- ('AFFIX', 'ROOT', 'AFFIX', 'ENDING') &emsp; &emsp; ex: "malbonega" = "mal_bon_eg_a" (very bad)
+- ('ROOT', 'AFFIX', 'AFFIX', 'ENDING') &emsp; &emsp; ex: "bonigilo" = "bon_ig_il_o" (an enhancer)
+- ('AFFIX', 'AFFIX', 'ROOT', 'AFFIX', 'ENDING') &emsp; &emsp; ex: "malbonigilo" = "mal_bon_ig_il_o" (a detractor)
+- ('AFFIX', 'ROOT', 'AFFIX', 'AFFIX', 'ENDING') &emsp; &emsp; ex: "miskomunistestro" = "mis_komun_ist_estr_o" (an anti-communist leader)
+- ('AFFIX', 'AFFIX', 'ROOT', 'ENDING') &emsp; &emsp; ex: "fieksedzo" = "fi_eks_edz_o" (a wicked ex-husband)
 
 Any tag labeled “ROOT” will get passed to a BPE tokenizer, to tokenize these core words in the same way the entire corpus would usually be tokenized. This allows for the model to gain some extra context about the content of these roots, and to reduce the number of tokens the model will have to deal with.
 
