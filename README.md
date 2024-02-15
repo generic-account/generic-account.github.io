@@ -62,13 +62,13 @@ Finally, the segmentations and tags for each sentence are collapsed into one, de
 
 ### Example Sentences
 
-Below are three example sentences, with each step of the morphological tokenization process shown. The differences are highlighted at each transition, except at the major steps between the cleaned sentences and the tagged and segmented ones, and between the tagged and segmented sentences and the marked sentences.
+Below are three example sentences, with each step of the morphological tokenization process shown. The differences are bolded at each transition, except at the major steps between the cleaned sentences and the tagged and segmented ones, and between the tagged and segmented sentences and the marked sentences.
 
 | Esperanto Sentence                            | English Translation                                        | After Sacremoses Regularization                              | Cleaned and Circumflexes Removed                              |
 | --------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------- |
-| Ni provu ion!                                 | Let's try something!                                       | ==n==i provu ion ==!==                                               | ni provu ion !                                                |
-| Mi devas enlitiĝi.                            | I have to go to sleep.                                     | ==m==i devas enlitiĝi ==.==                                          | mi devas enliti==gx==i .                                          |
-| The knife is hard, the boiled potato is soft. | La tranĉilo estas malmola, la boligita terpomo estas mola. | ==l==a tranĉilo estas malmola ==,== la boligita terpomo estas mola ==.== | la tran==cx==ilo estas malmola , la boligita terpomo estas mola . |
+| Ni provu ion!                                 | Let's try something!                                       | **n**i provu ion **!**                                               | ni provu ion !                                                |
+| Mi devas enlitiĝi.                            | I have to go to sleep.                                     | **m**i devas enlitiĝi **.**                                          | mi devas enliti**gx**i .                                          |
+| The knife is hard, the boiled potato is soft. | La tranĉilo estas malmola, la boligita terpomo estas mola. | **l**a tranĉilo estas malmola **,** la boligita terpomo estas mola **.** | la tran**cx**ilo estas malmola , la boligita terpomo estas mola . |
 
 <br>
 
@@ -82,9 +82,9 @@ Below are three example sentences, with each step of the morphological tokenizat
 
 | Esperanto Sentence                            | Tags Simplified                                                                                                                                                                                                                           |
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ni provu ion!                                 | (ni,SPECIAL), (prov_u,===ROOT_ENDING==), (io_n,==SPECIAL_ENDING==), (!)                                                                                                                                                                            |
-| Mi devas enlitiĝi.                            | (mi,==SPECIAL==), (dev_as,==ROOT_ENDING==), (en_lit_igx_i,==AFFIX_ROOT_AFFIX_ENDING==), (.)                                                                                                                                                           |
-| The knife is hard, the boiled potato is soft. | (la,==SPECIAL==), (trancx_il_o,==ROOT_AFFIX_ENDING==), (est_as,==ROOT_ENDING==), (mal_mol_a,==AFFIX_ROOT_ENDING==), (,), (la,==SPECIAL==), (bol_ig_it_a,==ROOT_ROOT_AFFIX_ENDING==), (ter_pom_o,==ROOT_ROOT_ENDING==), (est_as,==ROOT_ENDING==), (mol_a,==ROOT_ENDING==), (.) |
+| Ni provu ion!                                 | (ni,SPECIAL), (prov_u,**=ROOT_ENDING**), (io_n,**SPECIAL_ENDING**), (!)                                                                                                                                                                            |
+| Mi devas enlitiĝi.                            | (mi,**SPECIAL**), (dev_as,**ROOT_ENDING**), (en_lit_igx_i,**AFFIX_ROOT_AFFIX_ENDING**), (.)                                                                                                                                                           |
+| The knife is hard, the boiled potato is soft. | (la,**SPECIAL**), (trancx_il_o,**ROOT_AFFIX_ENDING**), (est_as,**ROOT_ENDING**), (mal_mol_a,**AFFIX_ROOT_ENDING**), (,), (la,**SPECIAL**), (bol_ig_it_a,**ROOT_ROOT_AFFIX_ENDING**), (ter_pom_o,**ROOT_ROOT_ENDING**), (est_as,**ROOT_ENDING**), (mol_a,**ROOT_ENDING**), (.) |
 
 <br>
 
@@ -92,7 +92,7 @@ Below are three example sentences, with each step of the morphological tokenizat
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Ni provu ion!                                 | (ni,SPECIAL), (prov_u,ROOT_ENDING), (io_n,SPECIAL_ENDING), (!)                                                                                                                                                                |
 | Mi devas enlitiĝi.                            | (mi,SPECIAL), (dev_as,ROOT_ENDING), (en_lit_igx_i,AFFIX_ROOT_AFFIX_ENDING), (.)                                                                                                                                               |
-| The knife is hard, the boiled potato is soft. | (la,SPECIAL), (trancx_il_o,ROOT_AFFIX_ENDING), (est_as,ROOT_ENDING), (mal_mol_a,AFFIX_ROOT_ENDING), (,), (la,SPECIAL), (==bolig==_it_a,==ROOT==_AFFIX_ENDING), (==terpom==_o,==ROOT==_ENDING), (est_as,ROOT_ENDING), (mol_a,ROOT_ENDING), (.) |
+| The knife is hard, the boiled potato is soft. | (la,SPECIAL), (trancx_il_o,ROOT_AFFIX_ENDING), (est_as,ROOT_ENDING), (mal_mol_a,AFFIX_ROOT_ENDING), (,), (la,SPECIAL), (**bolig**_it_a,**ROOT**_AFFIX_ENDING), (**terpom**_o,**ROOT**_ENDING), (est_as,ROOT_ENDING), (mol_a,ROOT_ENDING), (.) |
 
 <br>
 
@@ -100,7 +100,8 @@ Below are three example sentences, with each step of the morphological tokenizat
 | --------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | Ni provu ion!                                 | ni特 prov u終 io n終 !空                                                                  | ni特 prov u終 io n終 !空                                                                   |
 | Mi devas enlitiĝi.                            | mi特 dev as終 en接 lit igx接 i終 .空                                                        | mi特 dev as終 en接 lit igx接 i終 .空                                                         |
-| The knife is hard, the boiled potato is soft. | la特 trancx il接 o終 est as終 mal接 mol a終 ,空 la特 bolig it接 a終 terpom o終 est as終 mol a終 .空 | la特 trancx il接 o終 est as終 mal接 mol a終 ,空 la特 ==bol ig== it接 a終 terpom o終 est as終 mol a終 .空 |
+| The knife is hard, the boiled potato is soft. | la特 trancx il接 o終 est as終 mal接 mol a終 ,空 la特 bolig it接 a終 terpom o終 est as終 mol a終 .空 | la特 trancx il接 o終 est as終 mal接 mol a終 ,空 la特 **bol ig** it接 a終 terpom o終 est as終 mol a終 .空 |
+
 ---
 ## Experimental Setup
 
