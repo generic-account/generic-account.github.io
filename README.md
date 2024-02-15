@@ -34,18 +34,17 @@ The segmentation itself is done with EsperantoWordSegmenter, a tool that algorit
 #### Tag Reduction
 Tag reduction is a very important step, as the EsperantoWordSegmenter algorithm distinguishes from a number of grammatical tags that are not relevant to this project. The types of tags fall into four broad categories, standalone words (special words like correlatives, numbers, or pronouns), affixes (which the program divides into NounSuffix, NounPrefix, PeopleAnimalPrefix, AdjectiveSuffix, etc…), roots (including adjectives, nouns, and verbs), mid-word endings including “o”, a glue letter that serves to connect Esperanto words like in the case of “lampocilindro lamp'o'cilindr'o”, and endings which are split up into adjective endings, noun endings, pronoun endings, etc… The primary requirement for the tagging system is that it is unambiguous, such that a line of text can be segmented, tagged, and returned to its exact form with spaces inserted correctly. As such, we simply the many tag distinctions of EsperantoWordSegmenter into only four types of tags, “SPECIAL”, “ROOT”, “AFFIX”, and “ENDING”. “SPECIAL” includes standalone words and punctuation, “ROOT” includes any root, “AFFIX” includes any prefix or suffix, and “ENDING” only includes the very small set of endings in Esperanto. To convert the tags from EsperantoWordSegmenter to this smaller set, we simply apply a mapping of the more complex tags to the distinct tags. Then, any repeated “ROOT” tags are collapsed into one “ROOT”, with (“ROOT”, ”AFFIX”, ”ROOT”) patterns also being reduced to “ROOT”, in order to aid the further segmentation of these subwords by the BPE tokenizer. Furthermore, aberrant patterns such as (“AFFIX”, “AFFIX”) or just one (“ENDING”,) are reduced to one “ROOT”, as these are often names and other unique words that did not segment properly. After this process is done, every word fits one of only a few segmentation patterns, seen below:
 
-- ('ROOT', 'ENDING')
-- ('SPECIAL',)
-- ('ROOT', 'AFFIX', 'ENDING')
-- ('SPECIAL', 'ENDING')
-- ('AFFIX', 'ROOT', 'ENDING')
-- ('AFFIX', 'ROOT', 'AFFIX', 'ENDING')
-- ('ROOT',)
-- ('ROOT', 'AFFIX', 'AFFIX', 'ENDING')
-- ('AFFIX', 'AFFIX', 'ROOT', 'ENDING')
-- ('AFFIX', 'AFFIX', 'ROOT', 'AFFIX', 'ENDING')
-- ('AFFIX', 'ROOT', 'AFFIX', 'AFFIX', 'ENDING')
-- ('AFFIX', 'AFFIX', 'AFFIX', 'ENDING')
+- ('SPECIAL',) &emsp; &emsp; &emsp; &emsp; &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  &emsp;  ex: "mi" = "mi" (I or me)
+- ('SPECIAL', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp;   &emsp; &emsp; &emsp; &emsp; &nbsp; ex: "mia" = "mi_a" (my)
+- ('ROOT',) &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp; ex: "lichtstein" = "lichtstein" (Lichtstein (a proper noun))
+- ('ROOT', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp;  &emsp; &nbsp;  ex: "bona" = "bon_a" (good)
+- ('ROOT', 'AFFIX', 'ENDING')  &emsp; &emsp;  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ex: "bonega" = "bon_eg_a" (great)
+- ('AFFIX', 'ROOT', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp;  &emsp; &emsp; ex: "malbona" = "mal_bon_a" (bad)
+- ('AFFIX', 'ROOT', 'AFFIX', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &nbsp; ex: "malbonega" = "mal_bon_eg_a" (very bad)
+- ('ROOT', 'AFFIX', 'AFFIX', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &nbsp; ex: "bonigilo" = "bon_ig_il_o" (an enhancer)
+- ('AFFIX', 'AFFIX', 'ROOT', 'AFFIX', 'ENDING') &emsp; ex: "malbonigilo" = "mal_bon_ig_il_o" (a detractor)
+- ('AFFIX', 'ROOT', 'AFFIX', 'AFFIX', 'ENDING') &emsp; ex: "miskomunistestro" = "mis_komun_ist_estr_o" (an anti-communist leader)
+- ('AFFIX', 'AFFIX', 'ROOT', 'ENDING') &emsp; &emsp; &emsp; &emsp;  &nbsp; ex: "fieksedzo" = "fi_eks_edz_o" (a wicked ex-husband)
 
 Any tag labeled “ROOT” will get passed to a BPE tokenizer, to tokenize these core words in the same way the entire corpus would usually be tokenized. This allows for the model to gain some extra context about the content of these roots, and to reduce the number of tokens the model will have to deal with.
 
@@ -55,7 +54,7 @@ However, this process introduces a problem regarding where spaces must be placed
 
 At a large scale, it would be very computationally expensive to segment and tag every word in every sentence individually, as most words appear multiple times within the corpus. Hence, we first generate a file containing a set of every unique word, each word on a line, and we feed that into EsperantoWordSegmenter. In the simplification stage, as we scan through the corpus we slowly build up a dictionary of unique words and their segmentations and tags (e.g. {“sxatigi”: ((“sxat”, ”ig”, ”i”), (“ROOT”, ”AFFIX”, ”ENDING”))}, meaning “to begin liking” ), and if we later see that word, instead of simplifying its segmentation and tags again, we simply reference the dictionary and use that simplified segmentation and tags.
 
-#### Combining the segmented and tagged forms, and 
+#### Combining the segmented and tagged forms and adding markers
 Finally, the segmentations and tags for each sentence are collapsed into one, delimited by “点” and “分” (meaning dot (period) and divide (space) in Chinese, respectively). Every segment will be followed by a Chinese character representing its tag type (AFFIX, ENDING, and SPECIAL mapping to "接", "終", and "特", respectively). Roots, after being passed into the BPE tokenizer and segmented according to this algorithm, receive no marking. Roots or segments of roots followed by a space will be given the tag ”空" instead, to indicate where spaces should be placed in the un-segmentation process. This collapses the information previously stored in two lists (the list of the segments of a word, and a list of the corresponding tags) into one.
 
 ---
