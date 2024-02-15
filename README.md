@@ -62,7 +62,7 @@ Finally, the segmentations and tags for each sentence are collapsed into one, de
 
 ### Example Sentences
 
-Below are three example sentences, with each step of the morphological tokenization process shown. The differences are bolded at each transition, except at the major steps between the cleaned sentences and the tagged and segmented ones, and between the tagged and segmented sentences and the marked sentences.
+Below are three example sentences, with each step of the morphological tokenization process shown. The differences are bolded at each transition, except at the major steps between the cleaned sentences and the tagged and segmented ones, and between the tagged and segmented sentences and the marked sentences. I have also included the same sentences, as completely tokenized by the generic BPE tokenizer for comparison.
 
 | Esperanto Sentence                            | English Translation                                        | After Sacremoses Regularization                              | Cleaned and Circumflexes Removed                              |
 | --------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------- |
@@ -96,11 +96,12 @@ Below are three example sentences, with each step of the morphological tokenizat
 
 <br>
 
-| Esperanto Sentence                            | With Markers                                                                          | With Roots BPE Tokenized                                                               |
-| --------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Ni provu ion!                                 | ni特 prov u終 io n終 !空                                                                  | ni特 prov u終 io n終 !空                                                                   |
-| Mi devas enlitiĝi.                            | mi特 dev as終 en接 lit igx接 i終 .空                                                        | mi特 dev as終 en接 lit igx接 i終 .空                                                         |
-| The knife is hard, the boiled potato is soft. | la特 trancx il接 o終 est as終 mal接 mol a終 ,空 la特 bolig it接 a終 terpom o終 est as終 mol a終 .空 | la特 trancx il接 o終 est as終 mal接 mol a終 ,空 la特 **bol ig** it接 a終 terpom o終 est as終 mol a終 .空 |
+| Esperanto Sentence                            | With Markers                                                                          | With Roots BPE Tokenized                                                               | Fully BPE Tokenized (for comparison)                                            |
+| --------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Ni provu ion!                                 | ni特 prov u終 io n終 !空                                                                  | ni特 prov u終 io n終 !空                                                                   | ni終 provu終 ion終 !終                                                              |
+| Mi devas enlitiĝi.                            | mi特 dev as終 en接 lit igx接 i終 .空                                                        | mi特 dev as終 en接 lit igx接 i終 .空                                                         | mi終 devas終 enliti gxi終 .終                                                       |
+| The knife is hard, the boiled potato is soft. | la特 trancx il接 o終 est as終 mal接 mol a終 ,空 la特 bolig it接 a終 terpom o終 est as終 mol a終 .空 | la特 trancx il接 o終 est as終 mal接 mol a終 ,空 la特 bol ig it接 a終 terpom o終 est as終 mol a終 .空 | la終 trancxi lo終 estas終 mal mo la終 ,終 la終 bo li gita終 ter pomo終 estas終 mo la終 .終 |
+
 
 ---
 ## Experimental Setup
