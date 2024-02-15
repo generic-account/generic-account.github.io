@@ -119,6 +119,7 @@ As the initialization and training process is somewhat random, we trained and te
 ## Results
 
 #### Average BLEU Scores, Aggregated Data:
+
 || BPE Tokenizer       | Semantic Tokenizer|
 |----------|---------------------|--------------------|
 | **EN -> EO** | 51.69666667         | 51.42              |
