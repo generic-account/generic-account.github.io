@@ -59,6 +59,49 @@ At a large scale, it would be very computationally expensive to segment and tag 
 Finally, the segmentations and tags for each sentence are collapsed into one, delimited by “点” and “分” (meaning dot (period) and divide (space) in Chinese, respectively). Every segment will be followed by a Chinese character representing its tag type (AFFIX, ENDING, and SPECIAL mapping to "接", "終", and "特", respectively). Roots, after being passed into the BPE tokenizer and segmented according to this algorithm, receive no marking. Roots or segments of roots followed by a space will be given the tag ”空" instead, to indicate where spaces should be placed in the un-segmentation process. This collapses the information previously stored in two lists (the list of the segments of a word, and a list of the corresponding tags) into one.
 
 ---
+
+### Example Sentences
+
+Below are three example sentences, with each step of the morphological tokenization process shown. The differences are highlighted at each transition, except at the major steps between the cleaned sentences and the tagged and segmented ones, and between the tagged and segmented sentences and the marked sentences.
+
+| Esperanto Sentence                            | English Translation                                        | After Sacremoses Regularization                              | Cleaned and Circumflexes Removed                              |
+| --------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------- |
+| Ni provu ion!                                 | Let's try something!                                       | ==n==i provu ion ==!==                                               | ni provu ion !                                                |
+| Mi devas enlitiĝi.                            | I have to go to sleep.                                     | ==m==i devas enlitiĝi ==.==                                          | mi devas enliti==gx==i .                                          |
+| The knife is hard, the boiled potato is soft. | La tranĉilo estas malmola, la boligita terpomo estas mola. | ==l==a tranĉilo estas malmola ==,== la boligita terpomo estas mola ==.== | la tran==cx==ilo estas malmola , la boligita terpomo estas mola . |
+
+<br>
+
+| Esperanto Sentence                            | Segmented and Tagged with EsperantoWordSegmenter                                                                                                                                                                                                                          |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ni provu ion!                                 | (ni,Pronoun), (prov_u,Verb_VerbEnding), (io_n,Table_TablePronounEnding)                                                                                                                                                                                                   |
+| Mi devas enlitiĝi.                            | (mi,Pronoun), (dev_as,Verb_VerbEnding), (en_lit_igx_i,PrepPrefix_Noun_VerbSuffix_VerbEnding)                                                                                                                                                                              |
+| The knife is hard, the boiled potato is soft. | (la,Article), (trancx_il_o,Verb_NounSuffix_NounEnding), (est_as,Verb_VerbEnding), (mal_mol_a,VerbPrefix_Adj_AdjEnding), (,), (la,Article), (bol_ig_it_a,Verb_Verb_TenseSuffix_AdjEnding), (ter_pom_o,Noun_Noun_NounEnding), (est_as,Verb_VerbEnding), mol_a,Adj_AdjEnding |
+
+<br>
+
+| Esperanto Sentence                            | Tags Simplified                                                                                                                                                                                                                           |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ni provu ion!                                 | (ni,SPECIAL), (prov_u,===ROOT_ENDING==), (io_n,==SPECIAL_ENDING==), (!)                                                                                                                                                                            |
+| Mi devas enlitiĝi.                            | (mi,==SPECIAL==), (dev_as,==ROOT_ENDING==), (en_lit_igx_i,==AFFIX_ROOT_AFFIX_ENDING==), (.)                                                                                                                                                           |
+| The knife is hard, the boiled potato is soft. | (la,==SPECIAL==), (trancx_il_o,==ROOT_AFFIX_ENDING==), (est_as,==ROOT_ENDING==), (mal_mol_a,==AFFIX_ROOT_ENDING==), (,), (la,==SPECIAL==), (bol_ig_it_a,==ROOT_ROOT_AFFIX_ENDING==), (ter_pom_o,==ROOT_ROOT_ENDING==), (est_as,==ROOT_ENDING==), (mol_a,==ROOT_ENDING==), (.) |
+
+<br>
+
+| Esperanto Sentence                            | Roots Collapsed                                                                                                                                                                                                               |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ni provu ion!                                 | (ni,SPECIAL), (prov_u,ROOT_ENDING), (io_n,SPECIAL_ENDING), (!)                                                                                                                                                                |
+| Mi devas enlitiĝi.                            | (mi,SPECIAL), (dev_as,ROOT_ENDING), (en_lit_igx_i,AFFIX_ROOT_AFFIX_ENDING), (.)                                                                                                                                               |
+| The knife is hard, the boiled potato is soft. | (la,SPECIAL), (trancx_il_o,ROOT_AFFIX_ENDING), (est_as,ROOT_ENDING), (mal_mol_a,AFFIX_ROOT_ENDING), (,), (la,SPECIAL), (==bolig==_it_a,==ROOT==_AFFIX_ENDING), (==terpom==_o,==ROOT==_ENDING), (est_as,ROOT_ENDING), (mol_a,ROOT_ENDING), (.) |
+
+<br>
+
+| Esperanto Sentence                            | With Markers                                                                          | With Roots BPE Tokenized                                                               |
+| --------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Ni provu ion!                                 | ni特 prov u終 io n終 !空                                                                  | ni特 prov u終 io n終 !空                                                                   |
+| Mi devas enlitiĝi.                            | mi特 dev as終 en接 lit igx接 i終 .空                                                        | mi特 dev as終 en接 lit igx接 i終 .空                                                         |
+| The knife is hard, the boiled potato is soft. | la特 trancx il接 o終 est as終 mal接 mol a終 ,空 la特 bolig it接 a終 terpom o終 est as終 mol a終 .空 | la特 trancx il接 o終 est as終 mal接 mol a終 ,空 la特 ==bol ig== it接 a終 terpom o終 est as終 mol a終 .空 |
+---
 ## Experimental Setup
 
 First, the Esperanto corpus is morphologically tokenized, according to the process described above. The corpus is also tokenized with a standard BPE tokenization algorithm to serve as a reference to compare our experimental model.
@@ -67,7 +110,7 @@ First, the Esperanto corpus is morphologically tokenized, according to the proce
 
 The building and training of the models themselves is done with Fairseq. The models are transformers, ubiquitous in NLP and other machine learning applications, which efficiently extract the most important pieces of context from their input data, in this instance Esperanto and English sentences. There are four models, two of which utilize the experimental morphological tokenizer, with the other two using the standard BPE tokenizer. For each type of tokenizer, one model is trained to translate from English to Esperanto, and the other translates from Esperanto to English.
 
-To train the models, we use data from the English to Esperanto Tatoeba corpus, a dataset of about 300,000 parallel sentences (one sentence in English, and its translation in Esperanto), taken from the language learning site tatoeba.org.[^4] Users of the site can input their own new sentences and translations, which can sometimes introduce errors and unclean data (e.g. sentences in the Esperanto sentences file that are in English, Chinese, contain non-Esperanto characters, or are incorrect translations). These out-of-place translations only account for an extremely tiny percentage of the entire data (there are only a handful of misplaced sentences), so they likely have almost no impact on the final results. It is also interesting to note that there are many repeated English sentences that have multiple different Esperanto translations, and vice-versa. This is useful as it helps the models generalize by seeing the many possible different translations.
+To train the models, we use data from the English to Esperanto Tatoeba corpus, a dataset of about 300,000 parallel sentences (one sentence in English, and its translation in Esperanto), taken from the language learning site tatoeba.org.[^4] Users of the site can input their own new sentences and translations, which can sometimes introduce errors and unclean data (e.g. sentences in the Esperanto sentences file that are in English, Chinese, contain non-Esperanto characters, or are incorrect translations). One example of this is the English text "The bull is a strong animal" that was included among the Esperanto sentences. These out-of-place translations only account for an extremely tiny percentage of the entire data (there are only a handful of misplaced sentences), so they likely have almost no impact on the final results. It is also interesting to note that there are many repeated English sentences that have multiple different Esperanto translations, and vice-versa. This is useful as it helps the models generalize by seeing the many possible different translations.
 
 As the initialization and training process is somewhat random, we trained and tested 3 models for each type of model. This allows us to measure and analyze the impacts of the tokenization algorithm itself while mitigating some of the randomness inherent to the process. However, this is a slight limitation of the project, as ideally, we would be able to run more tests to better filter out the effect of randomness.
 
@@ -75,13 +118,14 @@ As the initialization and training process is somewhat random, we trained and te
 ## Results
 
 #### Average BLEU Scores, Aggregated Data:
-
-|| BPE Tokenizer | Semantic Tokenizer |
+|| BPE Tokenizer       | Semantic Tokenizer|
 |----------|---------------------|--------------------|
 | **EN -> EO** | 51.69666667         | 51.42              |
 | **EO -> EN** | 58.45               | 58.38              |
 
-#### Raw Data (scroll to see all data):
+<br>
+
+#### Raw Data:
 
 | | Trial 1 (seed = 1000) BLEU Score | Trial 1 Training Time (sec) | Trial 1 Epochs | Trial 2 (seed = 1001) BLEU Score | Trial 2 Training Time (sec) | Trial 2 Epochs | Trial 3 (seed = 1002) BLEU Score | Trial 3 Training Time (sec) | Trial 3 Epochs | Average BLEU Score | Average Training Time (sec) | Average Epochs |  
 | :-----------------------------: | :------------------------------: | :-------------------------: | :------------: | :------------------------------: | :-------------------------: | :------------: | :------------------------------: | :-------------------------: | :------------: | :----------------: | :-------------------------: | :------------: |  
@@ -94,7 +138,7 @@ As the initialization and training process is somewhat random, we trained and te
 After training and validating each type of model (English to Esperanto with morphological tokenizer, English to Esperanto with BPE tokenizer, Esperanto to Esperanto with morphological tokenizer, and Esperanto to English with BPE tokenizer), we found no statistically significant difference in the performance of the morphologically tokenized models compared to the BPE tokenized models, all outputting about the same BLEU score (a measure of how well the model's output translations match up with the official outputs from the Tatoeba corpus, with higher being better).[^5] For English to Esperanto (EN -> EO), both average BLEU scores were about 51 plus or minus less than one BLEU, and for Esperanto to English (EO -> EN), both average scores were about 58, plus or minus less than one BLEU. It is interesting to note that our semantic tokenizer performed very slightly worse in these tests, however this is about what one would expect from the random influences of which seeds we used and is not statistically significant.
 
  ---
-## Conclusion 
+## Conclusion
 
 The results of this experiment hint at the robustness of the BPE tokenization algorithm, the unintuitiveness of tokenization and how it impacts models, but also the need for more study in this area. With a simple algorithm that requires little to no specific tuning for the target language, BPE performs similarly to an algorithm specially designed to fit the morphology of Esperanto, reinforcing the validity of this often-used algorithm in NLP.
 
@@ -109,5 +153,3 @@ There are countless other variables that could impact the results of this experi
 [^3]:[https://github.com/tguinard/EsperantoWordSegmenter](https://github.com/tguinard/EsperantoWordSegmenter)
 [^4]:[https://opus.nlpl.eu/Tatoeba/en&eo/v2023-04-12/Tatoeba](https://github.com/tguinard/EsperantoWordSegmenter)
 [^5]: [BLEU: a Method for Automatic Evaluation of Machine Translation]([https://aclanthology.org/P02-1040.pdf]([https://aclanthology.org/P02-1040.pdf)) (Papineni et al., NAACL 2002)
-
-
