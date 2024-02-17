@@ -1,5 +1,15 @@
 # Esperanto Morphological Tokenization
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XTRMS024V8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XTRMS024V8');
+</script>
+
 ## Introduction
 #### Esperanto Background
 Esperanto is an agglutinative constructed international auxiliary language, boasting a unique and regular set of grammatical features along with the largest speaker base of any constructed language. While it has its quirks which we will soon note, its word structure is incredibly regular, fitting only a handful of common patterns, making it uniquely suited to morphological segmentation, tokenization, and subword modeling, the process of splitting up words based on their structure for use in natural language processing models. We investigate the impact of morphological tokenization on the translation quality of English to Esperanto translations, using Fairseq, a simple sequence modeling toolkit built by Facebook. [^1]
