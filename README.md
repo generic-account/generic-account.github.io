@@ -152,8 +152,8 @@ One particular weakness of our algorithm is that we only extract a small amount 
 We would like to thank Marco Cognetta for his amazing help and guidance throughout this project. Without him, this likely would not have been possible.
 
 ## References
-[^1]: [fairseq: A Fast, Extensible Toolkit for Sequence Modeling]([https://aclanthology.org/N19-4009](https://aclanthology.org/N19-4009)) (Ott et al., NAACL 2019)
+[^1]: [fairseq: A Fast, Extensible Toolkit for Sequence Modeling](https://aclanthology.org/N19-4009)
 [^2]:[https://github.com/hplt-project/sacremoses](https://github.com/hplt-project/sacremoses)
 [^3]:[https://github.com/tguinard/EsperantoWordSegmenter](https://github.com/tguinard/EsperantoWordSegmenter)
-[^4]:[https://opus.nlpl.eu/Tatoeba/en&eo/v2023-04-12/Tatoeba](https://github.com/tguinard/EsperantoWordSegmenter)
-[^5]: [BLEU: a Method for Automatic Evaluation of Machine Translation]([https://aclanthology.org/P02-1040.pdf]([https://aclanthology.org/P02-1040.pdf)) (Papineni et al., NAACL 2002)
+[^4]:[https://opus.nlpl.eu/Tatoeba/en&eo/v2023-04-12/Tatoeba]([https://opus.nlpl.eu/Tatoeba/en&eo/v2023-04-12/Tatoeba)
+[^5]: [BLEU: a Method for Automatic Evaluation of Machine Translation](https://aclanthology.org/P02-1040.pdf)
