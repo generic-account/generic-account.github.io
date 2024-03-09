@@ -2,7 +2,9 @@
 
 ## Introduction
 #### Esperanto Background
-Esperanto is an agglutinative constructed international auxiliary language, boasting a unique and regular set of grammatical features along with the largest speaker base of any constructed language. While it has its quirks which we will soon note, its word structure is incredibly regular, fitting only a handful of common patterns, making it uniquely suited to morphological segmentation, tokenization, and subword modeling, the process of splitting up words based on their structure for use in natural language processing models. We investigate the impact of morphological tokenization on the translation quality of English to Esperanto translations, using Fairseq, a simple sequence modeling toolkit built by Facebook. [^1]
+Esperanto is an agglutinative constructed international auxiliary language, boasting a unique and regular set of grammatical features along with the largest speaker base of any constructed language. I am one of those speakers. I've been studying Esperanto for about three years at this point, and I’ve been programming for about eight. This 2+ month personal project perfectly merges my fascination with linguistics and computer science, also utilizing another one of my passions - math - for statistical analysis of my results.
+
+While Esperanto has its quirks which we will soon note, its word structure is incredibly regular, fitting only a handful of common patterns, making it uniquely suited to morphological segmentation, tokenization, and subword modeling, the process of splitting up words based on their structure for use in natural language processing models. We investigate the impact of morphological tokenization on the translation quality of English to Esperanto translations, using Fairseq, a simple sequence modeling toolkit built by Facebook. [^1]
 
 #### Subword Modeling
 
@@ -113,7 +115,7 @@ The building and training of the models themselves is done with Fairseq. The mod
 
 To train the models, we use data from the English to Esperanto Tatoeba corpus, a dataset of about 300,000 parallel sentences (one sentence in English, and its translation in Esperanto), taken from the language learning site tatoeba.org.[^4] Users of the site can input their own new sentences and translations, which can sometimes introduce errors and unclean data (e.g. sentences in the Esperanto sentences file that are in English, Chinese, contain non-Esperanto characters, or are incorrect translations). One example of this is the English text "The bull is a strong animal" that was included among the Esperanto sentences. These out-of-place translations only account for an extremely tiny percentage of the entire data (there are only a handful of misplaced sentences), so they likely have almost no impact on the final results. It is also interesting to note that there are many repeated English sentences that have multiple different Esperanto translations, and vice-versa. This is useful as it helps the models generalize by seeing the many possible different translations.
 
-As the initialization and training process is somewhat random, we trained and tested 3 models for each type of model. This allows us to measure and analyze the impacts of the tokenization algorithm itself while mitigating some of the randomness inherent to the process. However, this is a slight limitation of the project, as ideally, we would be able to run more tests to better filter out the effect of randomness.
+As the initialization and training process is somewhat random, we trained and tested 3 models for each type of model. This allows us to measure and analyze the impacts of the tokenization algorithm itself while mitigating some of the randomness inherent to the process. However, this is a slight limitation of the project, as ideally, we would be able to run more tests to better filter out the effect of randomness. Afterward, I perform a 2-Sample T-Test to determine whether the mean BLEU scores are statistically significantly different.
 
 ---
 ## Results
@@ -125,6 +127,13 @@ As the initialization and training process is somewhat random, we trained and te
 | **EN -> EO** | 51.69666667         | 51.42              |
 | **EO -> EN** | 58.45               | 58.38              |
 
+#### Statistical Data:
+|                          | P-Value from 2-Sample T-Test |
+| ------------------------ | ---------------------------- |
+| BPE vs Semantic Overall  | 0.937956                     |
+| BPE vs Semantic EN -> EO | 0.225712                     |
+| BPE vs Semantic EO -> EN | 0.987513                     |
+
 #### Raw Data:
 
 | | Trial 1 (seed = 1000) BLEU Score | Trial 1 Training Time (sec) | Trial 1 Epochs | Trial 2 (seed = 1001) BLEU Score | Trial 2 Training Time (sec) | Trial 2 Epochs | Trial 3 (seed = 1002) BLEU Score | Trial 3 Training Time (sec) | Trial 3 Epochs | Average BLEU Score | Average Training Time (sec) | Average Epochs |  
@@ -135,7 +144,7 @@ As the initialization and training process is somewhat random, we trained and te
 | **EO -> EN Semantic Tokenizer** | 58.47 | 6256.4 | 60 | 58.01 | 3868.7 | 37 | 58.66 | 5093.1 | 49 | 58.38 | 5072.733333 | 48.66666667 |
 
 #### Analysis
-After training and validating each type of model (English to Esperanto with morphological tokenizer, English to Esperanto with BPE tokenizer, Esperanto to Esperanto with morphological tokenizer, and Esperanto to English with BPE tokenizer), we found no statistically significant difference in the performance of the morphologically tokenized models compared to the BPE tokenized models, all outputting about the same BLEU score (a measure of how well the model's output translations match up with the official outputs from the Tatoeba corpus, with higher being better).[^5] For English to Esperanto (EN -> EO), both average BLEU scores were about 51 plus or minus less than one BLEU, and for Esperanto to English (EO -> EN), both average scores were about 58, plus or minus less than one BLEU. It is interesting to note that our semantic tokenizer performed very slightly worse in these tests, however this is about what one would expect from the random influences of which seeds we used and is not statistically significant.
+After training and validating each type of model (English to Esperanto with morphological tokenizer, English to Esperanto with BPE tokenizer, Esperanto to Esperanto with morphological tokenizer, and Esperanto to English with BPE tokenizer), we found no statistically significant difference in the performance of the morphologically tokenized models compared to the BPE tokenized models, all outputting about the same BLEU score (a measure of how well the model's output translations match up with the official outputs from the Tatoeba corpus, with higher being better).[^5] For English to Esperanto (EN -> EO), both average BLEU scores were about 51 plus or minus less than one BLEU, and for Esperanto to English (EO -> EN), both average scores were about 58, plus or minus less than one BLEU. Upon performing the 2-Sample T-Tests all comparisons yielded p-values far above 0.05, the standard for statistical significance. Upon performing the 2-Sample T-Tests all comparisons yielded p-values far above 0.05, the standard for statistical significance. It is interesting to note that our semantic tokenizer performed very slightly worse in these tests, however this is about what one would expect from the random influences of which seeds we used and is not statistically significant.
 
  ---
 ## Conclusion
@@ -147,6 +156,8 @@ It seems quite intuitive that developing an algorithm to specifically morphologi
 There are countless other variables that could impact the results of this experiment, from the language pair to the dataset size and the training time, plus a whole range of model hyperparameters. While the benefit of morphological tokenization to Esperanto transformer models may be relatively small, it is entirely possible that morphological tokenization would yield better results when applied to English or German, even though it would be harder to program such tokenizers for less regular languages. Additionally, it’s likely that the morphological tokenization has some effect, good or bad, on the final BLEU scores, but that we were not able to uncover it with our limited resources. Perhaps training more models or training them for longer would unveil some different BLEU upper-bound. In addition to this there are many hyperparameters, high-level knobs and levers we can tweak when training the models, which may affect the effectiveness of morphological tokenization. Without more experimentation, it’s not possible to know.
 
 One particular weakness of our algorithm is that we only extract a small amount of the easily accessible semantic content of words, limited to mostly stripping off affixes and endings along with identifying special words and letting a BPE tokenizer handle the rest. In reality, these simple patterns are quickly picked up by a BPE tokenizer, which we can see in the few example sentences above. The BPE tokenizer learned pronouns, some endings, and even an affix ("mal", meaning "not"). More complex words or very irregular words are exactly those which we would likely get the most benefit out of by morphologically tokenizing, but our algorithm collapses them all to "ROOT" (in the case of very irregular words), or combines all "ROOT" tags into one single "ROOT" for the BPE tokenization step (in the case of large compound words). One specific future experiment or series of experiments could focus on these difficult compound words and irregular forms, maximally accurately morphologically segmenting them and making minimal use of the BPE tokenizer.
+
+This project is not only a culmination of over 2 months of work, but also represents the perfect intersection of my interests in computer science, math, and linguistics, topics that I hope to study in college and the future. It has taught me that in these studies and everywhere else, I must always be vigilant to check my own biases and intuition against empirical data and facts, and I will carry these lessons wherever I go.
 
 ---
 We would like to thank Marco Cognetta for his amazing help and guidance throughout this project. Without him, this likely would not have been possible.
