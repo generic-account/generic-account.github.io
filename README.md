@@ -127,12 +127,15 @@ As the initialization and training process is somewhat random, we trained and te
 | **EN -> EO** | 51.69666667         | 51.42              |
 | **EO -> EN** | 58.45               | 58.38              |
 
+
 #### Statistical Data:
+
 |                          | P-Value from 2-Sample T-Test |
 | ------------------------ | ---------------------------- |
 | BPE vs Semantic Overall  | 0.937956                     |
 | BPE vs Semantic EN -> EO | 0.225712                     |
 | BPE vs Semantic EO -> EN | 0.987513                     |
+
 
 #### Raw Data:
 
