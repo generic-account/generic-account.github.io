@@ -1,5 +1,3 @@
-<document start>
-  
 # Esperanto Morphological Tokenization
 
 ## Introduction
