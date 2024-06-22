@@ -19,6 +19,9 @@ I appreciate the beauty in music and nature by playing the flute and gardening. 
 
 ## Contact Info
 Personal email: glichtstein [at] gmail [dot] com
+
 School email: glicht [at] mit [dot] edu
+
 Linkedin: [Gordon Lichtstein](https://www.linkedin.com/in/gordon-lichtstein/)
+
 Github: generic-account
