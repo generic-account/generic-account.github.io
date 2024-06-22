@@ -1,6 +1,8 @@
 
 # Esperanto Morphological Tokenization
 
+A research project by Gordon Lichtstein using Fairseq to investigate the impact of morphological tokenization on the output of English-Esperanto translations
+
 ## Introduction
 #### Esperanto Background
 Esperanto is an agglutinative constructed international auxiliary language, boasting a unique and regular set of grammatical features along with the largest speaker base of any constructed language. I am one of those speakers. I've been studying Esperanto for about three years at this point, and I’ve been programming for about eight. This 2+ month personal project perfectly merges my fascination with linguistics and computer science, also utilizing another one of my passions - math - for statistical analysis of my results.
