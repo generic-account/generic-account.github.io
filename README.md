@@ -17,6 +17,8 @@ I appreciate the beauty in music and nature by playing the flute and gardening. 
 
 [OCR Accuracy Metrics Without Ground Truth Data](https://generic-account.github.io/OCR-Accuracy-Without-Ground-Truth-Data)
 
+More to come soon!
+
 ## Contact Info
 Personal email: glichtstein [at] gmail [dot] com
 
