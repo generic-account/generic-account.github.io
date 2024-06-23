@@ -1,7 +1,7 @@
 # Gordon Lichtstein
 
 ## Introduction
-Hi Everybody, I'm Gordon!
+Hi everybody, I'm Gordon!
 
 I'm an incoming freshman at MIT and a 2024 IB Diploma Program and dual enrollment student graduate.
 
