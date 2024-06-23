@@ -1,5 +1,7 @@
 # OCR Accuracy Metrics Without Ground Truth Data
 
+One of the projects I pursued during my summer fellowship at the University of California San Fransisco Industry Documents Library (UCSF IDL).
+
 # Introduction
 
 ## OCR Context
