@@ -207,53 +207,100 @@ fqdx0231 - This is a printed PDF (incorrectly labeled as handwritten)
 ### Random-String-Detector
 
 **Printed documents random-string-detector incorrectly identifies as bad OCR**
+
 mjxw0291 - Excel file (same one Nostril gets wrong)
+
 stcx0287 - close to cutoff - clutter and images
+
 ffdh0295 - close to cutoff - charts and a very bad scan
+
 sgxd0283 - The same Nostril is getting wrong
+
 rtmy0286 - close to cutoff - chart
+
 kxmw0301 - not a very good scan
+
 qtyw0301 - extremely close to cutoff
+
 nlmw0301 - many images 
+
 mhmj0300
+
 **Handwritten documents random-string-detector incorrectly identifies as good OCR**
+
 ptfj0224
+
 psdx0231
+
 jtbj0224 - extremely close to cutoff - mix of printed & handwritten
+
 mhjm0221
+
 hglb0233 - extremely close to cutoff
+
 kgwm0187 - extremely close to cutoff
+
 ysdl0187 - mix of printed / handwritten
+
 lghl0187 - The same one Nostril is getting wrong
+
 zfxl0187 - close to cutoff - somewhat neat handwritten numbers
+
 fqdx0231 - This is a pdf, the same one Nostril is getting wrong
+
 frcp0189 - extremely close to cutoff - mix of handwriting and printed
+
 xqyh0233 - mix of handwritten and printed
+
 fyvp0189 - mix of handwritten and printed
+
 gjwm0187
+
+
 
 ### Index of Coincidence
 
+
 **Printed documents the Index of Coincidence algorithm incorrectly identifies as bad OCR**
+
 mjxw0291 - Close to cutoff, Excel file (same as Nostril)
+
 sgxd0283 - Close to cutoff, same one Nostril gets wrong
+
 plxd0283 - Close to cutoff, small text
+
 gzcg0299 - Close to cutoff, a lot of images and diagrams
+
 yqwp0298 - Close to cutoff, images
+
 rpkg0299 - Close to cutoff, excel file
+
 qrdg0299 - Close to cutoff, images and diagrams
+
 **Printed documents Index of Coincidence algorithmincorrectly identifies as bad OCR**
+
 mjpl0226 - Close to cutoff, relatively neat handwriting
+
 tjpl0226
+
 yjpl0226 - Mix of handwriting and printed text
+
 ksyf0019 - Neat handwriting
+
 ptfj0224
+
 skmh0225
+
 mhjm0221
+
 llbj0224
+
 xxhl0187
+
 gqmb0233
+
 fqdx0231 - Close to cutoff, same as Nostril gets wrong
+
 pgwl0187 - Neat handwriting
 
 ## Ensemble Method - Multiple Metrics
