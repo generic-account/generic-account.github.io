@@ -5,7 +5,7 @@ Hi everybody, I'm Gordon!
 
 I'm an incoming freshman at MIT and a 2024 IB Diploma Program and dual enrollment student graduate.
 
-I'm deeply interested in the intersection of computer science and linguistics. Researched linguistic elliptical constructions at the Indiana University, Bloomington Natural Language Processing Lab, and Esperanto tokenization (see generic-account.github.io). Presented at the 2023 Polyglot Global Conference on the convergence of computational linguistics, constructed languages like Esperanto, and our minds.
+I'm deeply interested in the intersection of computer science and linguistics. Researched linguistic elliptical constructions at the Indiana University, Bloomington Natural Language Processing Lab, and Esperanto tokenization (independently). Presented at the 2023 Polyglot Global Conference on the convergence of computational linguistics, constructed languages like Esperanto, and our minds.
 
 Passionate about environmental sustainability and student environmental action. I work with an expanding group of Atlanta-area high school students towards net zero carbon emissions in school districts. Co-panelist at 2023 Getting to Zero Forum in Minneapolis, MN on "Catalyzing on Student Energy to Achieve Net Zero", 2024 Getting to Zero Forum, and 2024 Green Schools Conference.
 
