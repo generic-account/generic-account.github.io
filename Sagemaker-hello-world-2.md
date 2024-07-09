@@ -4,7 +4,7 @@
 
 First, navigate to the Campus Cloud AWS access portal. This may have been sent to you in an email, and you may need to sign in with your UCSF account to access it.
 
-![image-20240702181133708](/home/generic/.config/Typora/typora-user-images/image-20240702181133708.png)
+![image-20240702181133708](/images/image-20240702181133708.png)
 
 Now click on the triangle next to "IDL" to expand it, revealing the AWSAdministratorAccess and Access keys links
 
