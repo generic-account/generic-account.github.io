@@ -157,3 +157,5 @@ We are now at the screen we were at before. You're done, so feel free to close t
 ## Re-entering
 
 To re-enter the space you just created, follow the steps above starting from "Opening SageMaker". If you want to edit code from a previous session, launch that JupyterLabs space instead of creating a new one. **Always be sure to stop JupyterLabs once you are done**
+
+## And we're done! Good job
