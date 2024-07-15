@@ -13,11 +13,15 @@ Below are some interactive visualizations of the content and themes of our Tobac
 
 ### Dimensionality reduced from 768 to 20 ahead of time (faster)
 
-<center><iframe src="https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/generic-account/visualizations/main/visualization-json" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="1900px" allowfullscreen></iframe></center>
+<center>
+  <iframe src="https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/generic-account/visualizations/main/visualization-json" style="border:5px #ffffff solid;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="1900px" allowfullscreen></iframe>
+</center>
 
 
 
 ### Raw data - visualization and dimensionality reductions are up to you (slower)
 
-<center><iframe src="https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/generic-account/visualizations/main/visualization-json-large" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="1900px" allowfullscreen></iframe></center>
+<center>
+  <iframe src="https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/generic-account/visualizations/main/visualization-json-large" style="border:5px #ffffff solid;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="1900px" allowfullscreen></iframe>
+</center>
 
