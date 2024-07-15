@@ -9,7 +9,7 @@ center {
 
 ## Visualizations of the Tobacco Products Liability Project Collections
 
-Below are some interactive visualizations of the content and themes of UCSF IDL's Tobacco Products Liability Project Collection. Each point is a document, and you can scroll around, click on points, and view similar points (determined by the embedding model). You can also experiment with alternative dimensionality reduction algorithms and visualizations by clicking on "UMAP" or "PCA" in the bottom left and tweaking its options. I would recommend against using t-SNE, as it is O(n^2) in time and space so it is very slow for large datasets. Sometimes it takes a bit to set up a visualization, so don't be surprised if it doesn't work immediately.
+Below are some interactive visualizations of the content and themes of the UCSF IDL's Tobacco Products Liability Project Collection. Each point is a document, and you can scroll around, click on points, and view similar points (determined by the embedding model). You can also experiment with alternative dimensionality reduction algorithms and visualizations by clicking on "UMAP" or "PCA" in the bottom left and tweaking its options. I would recommend against using t-SNE, as it is O(n^2) in time and space so it is very slow for large datasets. Sometimes it takes a bit to set up a visualization, so don't be surprised if it doesn't work immediately. You can resize the windows by clicking and dragging the bottom right corner of the visualization.
 
 ### Dimensionality reduced from 768 to 20 ahead of time (faster)
 
