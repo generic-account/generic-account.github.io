@@ -1,6 +1,11 @@
 # Embedding Search, Dimensionality Reduction, and Semantic Visualization
 
-
+<style>
+div {
+  resize: both;
+  overflow: auto;
+}
+</style>
 
 ## Visualizations of the Tobacco Products Liability Project Collections
 
