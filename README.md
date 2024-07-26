@@ -21,6 +21,8 @@ I appreciate the beauty in music and nature by playing the flute and gardening. 
 
 [Embedding-based Search, Dimensionality Reduction, and Visualizations](https://generic-account.github.io/embedding-search-and-visualizations)
 
+[Graphing the English Language: A Network Theory Approach to Synonym Mapping](https://generic-account.github.io/Graphing-the-English-Language)
+
 More to come soon!
 
 ## Contact Info
