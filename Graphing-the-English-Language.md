@@ -2,7 +2,7 @@
 
 A project analyzing English with synonyms, NLP, and network theory by Akarsh Duddu and Gordon Lichtstein.
 
-Code and data can be found at (https://github.com/generic-account/syn_mapping)[https://github.com/generic-account/syn_mapping].
+Code and data can be found at [https://github.com/generic-account/syn_mapping](https://github.com/generic-account/syn_mapping).
 
 ## Introduction
 
