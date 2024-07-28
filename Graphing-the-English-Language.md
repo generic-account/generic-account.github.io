@@ -195,7 +195,7 @@ The distribution above shows that only a couple of values have a high eigenvecto
 
 The betweenness centrality is similar to Eigenvector Centrality in that a node with more connections will have a higher value. However, this specifically checks how often the node falls in the path between two other nodes. In other words, a node with high betweenness centrality acts like a bridge between semantic clusters in the graph, so that nodes in one cluster need to 'cross' the node to form a path with nodes of another cluster. High betweenness centrality means that node is connected to many other nodes, and serves as a bridge for many paths as well - like crossroads. The highest betweenness centrality (3,663,680) is for the word "take".
 
-## Conlcusion
+## Conclusion
 
 The English language is definitely complicated. Even with more than 400,000 words, however, we can learn some important insights from this synonym graph. 
 
