@@ -348,7 +348,7 @@ for result in document_analysis_results:
 
 ## 6. Further Resources and Next Steps
 
-This only scratched the surface of the power of AWS tools like Textract and Comprehend. They can also perform a variety of tasks from key-value pair extraction (e.g. getting somebody's birth date from a form), signature identification,
+This only scratched the surface of the power of AWS tools like Textract and Comprehend. They can also perform a variety of tasks from key-value pair extraction (e.g. getting somebody's birth date from a form), signature identification, and even PHI and PII identification with Comprehend Medical (which would be of particular relevance to UCSF).
 
 - **Amazon Textract Documentation**: [Learn more about Textract capabilities](https://aws.amazon.com/textract/).
 - **Amazon Comprehend Documentation**: [Explore text analysis with Comprehend](https://aws.amazon.com/comprehend/).
