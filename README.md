@@ -19,6 +19,8 @@ I appreciate the beauty in music and nature by playing the flute and gardening. 
 
 [AWS SageMaker & User Management Workshop](https://generic-account.github.io/Sagemaker-hello-world-2)
 
+[AWS Textract and Comprehend Workshop](https://generic-account.github.io/Amazon-Textract-Workshop)
+
 [Embedding-based Search, Dimensionality Reduction, and Visualizations](https://generic-account.github.io/embedding-search-and-visualizations)
 
 [Graphing the English Language: A Network Theory Approach to Synonym Mapping](https://generic-account.github.io/Graphing-the-English-Language)
