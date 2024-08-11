@@ -25,7 +25,13 @@ I appreciate the beauty in music and nature by playing the flute and gardening. 
 
 [Graphing the English Language: A Network Theory Approach to Synonym Mapping](https://generic-account.github.io/Graphing-the-English-Language)
 
-More to come soon!
+## Future Projects
+
+Operating System from Scratch in Rust
+
+Programming Language
+
+Compiler
 
 ## Contact Info
 Personal email: glichtstein [at] gmail [dot] com
