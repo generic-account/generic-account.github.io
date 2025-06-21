@@ -3,13 +3,10 @@
 ## Introduction
 Hi everybody, I'm Gordon!
 
-I'm an MIT first year planning to study EECS and Math, and a 2024 IB Diploma Program and dual enrollment student graduate.
 
-I'm deeply interested in the intersection of computer science, mathematics, and linguistics. Researched linguistic elliptical constructions at the Indiana University, Bloomington Natural Language Processing Lab, and Esperanto tokenization (independently). Presented at the 2023 Polyglot Global Conference on the convergence of computational linguistics, constructed languages like Esperanto, and our minds.
+I'm an incoming sophomore at MIT studying Electrical Engineering, Computer Science, and Mathematics,with a focus on programming languages and computer architecture. I'm especially interested in the intersection of performance engineering, compiler optimization, machine learning, numerical methods, and finance intersect
 
-Passionate about environmental sustainability and student environmental action. I work with an expanding group of Atlanta-area high school students towards net zero carbon emissions in school districts. Co-panelist at 2023 Getting to Zero Forum in Minneapolis, MN on "Catalyzing on Student Energy to Achieve Net Zero", 2024 Getting to Zero Forum, and 2024 Green Schools Conference.
-
-I appreciate the beauty in music and nature by playing the flute and gardening. I love playing tennis, amateur radio, and collecting cacti in my free time.
+Outside of school I’m passionate about language learning, radio, music, environmental sustainability, and nature.
 
 ## Projects
 
