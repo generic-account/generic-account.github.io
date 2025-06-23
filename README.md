@@ -4,7 +4,7 @@
 Hi everybody, I'm Gordon!
 
 
-I'm an incoming sophomore at MIT studying Electrical Engineering, Computer Science, and Mathematics,with a focus on programming languages and computer architecture. I'm especially interested in the intersection of performance engineering, compiler optimization, machine learning, numerical methods, and finance intersect
+I'm an incoming sophomore at MIT studying Electrical Engineering, Computer Science, and Mathematics,with a focus on programming languages and computer architecture. I'm especially interested in the intersection of performance engineering, compiler optimization, machine learning, numerical methods, and finance.
 
 Outside of school I’m passionate about language learning, radio, music, environmental sustainability, and nature.
 
@@ -22,13 +22,11 @@ Outside of school I’m passionate about language learning, radio, music, enviro
 
 [Graphing the English Language: A Network Theory Approach to Synonym Mapping](https://generic-account.github.io/Graphing-the-English-Language)
 
-## Future Projects
+## Textbooks I'm Reading
 
-Operating System from Scratch in Rust
+[Algorithms for Modern Hardware](https://en.algorithmica.org/hpc/)
 
-Programming Language
-
-Compiler
+[Computer Networking, a Top-Down Approach](https://www.ucg.ac.me/skladiste/blog_44233/objava_64433/fajlovi/Computer%20Networking%20_%20A%20Top%20Down%20Approach,%207th,%20converted.pdf)
 
 ## Contact Info
 Personal email: glichtstein [at] gmail [dot] com
