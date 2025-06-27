@@ -34,90 +34,123 @@
 
 # CS8803 - Datacenter Networks & Systems (Spring 2022)
 
-### Week 1: Introduction
 - [ ] [Berkeley View on Cloud](https://www.cs.yale.edu/homes/yu-minlan/teaching/fall16/berkeley_cloud.pdf)
 - [ ] [Datacenter as a Computer](https://www.cs.yale.edu/homes/yu-minlan/teaching/fall16/dc-computer.pdf)
 - [ ] [Berkeley View on Serverless](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-3.pdf)
 - [ ] [Fifth Epoch of Distributed Computing (YouTube)](https://www.youtube.com/watch?v=ZJIEzqO3n5E)
-
-### Week 2: Applications
 - [ ] [Spark](https://www.usenix.org/system/files/conference/nsdi17/nsdi17-gonzalez.pdf)
 - [ ] [Ray](https://www.usenix.org/system/files/osdi18-moritz.pdf)
 - [ ] [PipeDream](https://cs.stanford.edu/~matei/papers/2018/pipedream_osdi18.pdf)
 - [ ] [μTune](https://www.usenix.org/system/files/osdi20-zhang.pdf)
 - [ ] [SVE](https://www.cs.princeton.edu/~vivek/assets/pdf/sve.pdf)
 - [ ] [Data Analytics](https://www.usenix.org/system/files/conference/nsdi18/nsdi18-zhang.pdf)
-
-### Week 3: Network Workloads
 - [ ] [Inside Facebook's Datacenter](https://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p183.pdf)
 - [ ] [Facebook's Microbursts](https://conferences.sigcomm.org/sigcomm/2017/papers/sigcomm/p66.pdf)
 - [ ] [Nature of Microsoft's Datacenter](https://www.microsoft.com/en-us/research/wp-content/uploads/2012/10/IMC12.pdf)
 - [ ] [WAN Traffic](https://dl.acm.org/doi/pdf/10.1145/2486001.2486011)
-
-### Week 4: Network Topology
 - [ ] [FatTree](https://www.cs.yale.edu/homes/yu-minlan/teaching/fall16/fattree.pdf)
 - [ ] [FatClique](https://nsl.usc.edu/wp-content/uploads/2017/10/fatclique.pdf)
 - [ ] [Portland](https://cseweb.ucsd.edu/~vahdat/papers/portland-sigcomm09.pdf)
 - [ ] [High Performance Datacenter Networks](https://www.morganclaypool.com/doi/pdf/10.2200/S00362ED1V01Y201003CAC010)
-
-### Week 5: Accelerators
 - [ ] [SmartNICs](https://www.usenix.org/system/files/nsdi20-paper-firestone.pdf)
 - [ ] [TPUs](https://arxiv.org/abs/1704.04760)
 - [ ] [nanoPU](https://web.stanford.edu/~matei/papers/2020/nanopu_osdi20.pdf)
 - [ ] [Pigasus](https://www.usenix.org/system/files/nsdi21-paper-zhou.pdf)
-
-### Week 6: Resource Disaggregation
 - [ ] [Network for Disaggregation](https://www.usenix.org/system/files/nsdi20-paper-li.pdf)
 - [ ] [LegoOS](https://www.usenix.org/system/files/osdi18-hwang.pdf)
 - [ ] [AIFM](https://www.usenix.org/system/files/osdi20-paper-hwang.pdf)
 - [ ] [LeapIO](https://drkp.net/papers/leapio-nsdi21.pdf)
-
-### Week 7: Endhost Stacks
 - [ ] [DemiKernel](https://irenezhang.net/papers/demikernel.pdf)
 - [ ] [SNAP](https://courses.grainger.illinois.edu/cs598-snp/fa2020/papers/snap.pdf)
 - [ ] [Video Streaming](https://www.cl.cam.ac.uk/research/srg/netos/papers/2012-cui-videostreaming.pdf)
 - [ ] [Firecracker](https://www.usenix.org/system/files/nsdi20-paper-agache.pdf)
-
-### Week 8: RPCs
 - [ ] [eRPC](https://www.usenix.org/system/files/nsdi19-kalia.pdf)
 - [ ] [R2P2](https://www.usenix.org/system/files/nsdi19-kalia.pdf)
 - [ ] [Breakwater](https://saeed.github.io/papers/breakwater.pdf)
 - [ ] [Cerebros](https://www.usenix.org/system/files/nsdi21-paper-kalia.pdf)
-
-### Week 9: Low-latency Networking: RDMA
 - [ ] [RDMA Design Guidelines](https://www.usenix.org/system/files/nsdi17-kalia.pdf)
 - [ ] [Rethinking RDMA](https://irenezhang.net/papers/rdma.pdf)
 - [ ] [RDMA over Ethernet at Scale](https://www.microsoft.com/en-us/research/uploads/prod/2019/03/rdma_over_ethernet.pdf)
 - [ ] [FaSST](https://anujkalia.com/papers/fasst.pdf)
-
-### Week 10: Low-latency Networking: Transport & Congestion Control
 - [ ] [DCTCP](https://people.csail.mit.edu/alizadeh/papers/dctcp-sigcomm10.pdf)
 - [ ] [NDP](https://courses.cs.duke.edu/compsci514/cps214/compsci514/cps214/fall19/papers/ndp.pdf)
 - [ ] [HPCC](https://liyuliang001.github.io/papers/hpcc-sigcomm19.pdf)
 - [ ] [pFabric](https://web.stanford.edu/~keithw/pfabric-sigcomm13.pdf)
-
-### Week 12: Monitoring
 - [ ] [Sonata](https://www.cs.princeton.edu/~jrex/papers/sonata-sigcomm18.pdf)
 - [ ] [SIMON](https://www.usenix.org/system/files/nsdi20-paper-zhang.pdf)
 - [ ] [Omnimon](https://www.cse.cuhk.edu.hk/~cslui/papers/omnimon.pdf)
 - [ ] [Pingmesh](https://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p139.pdf)
-
-### Week 13: Programmable Data Planes
 - [ ] [P4](https://courses.engr.illinois.edu/cs598-snp/fa2017/papers/p4.pdf)
 - [ ] [RMT](https://people.cs.rutgers.edu/~sn624/papers/rmt.pdf)
 - [ ] [SwitchML](https://www.usenix.org/system/files/nsdi20-paper-zhang.pdf)
 - [ ] [SilkRoad](https://courses.engr.illinois.edu/cs598-snp/fa2017/papers/silkroad.pdf)
 - [ ] [ATP](https://www.usenix.org/system/files/nsdi20-paper-li.pdf)
-
-### Week 14: Cluster Scheduling
 - [ ] [Borg](https://research.google.com/pubs/archive/43438.pdf)
 - [ ] [Tetris](https://www.cs.cmu.edu/~dga/papers/tetris-eurosys15.pdf)
 - [ ] [Themis](https://www.usenix.org/system/files/nsdi20-paper-zhang.pdf)
 - [ ] [DRF](https://cs.stanford.edu/~matei/papers/2011/nsdi_drf.pdf)
 - [ ] [Decima](https://web.mit.edu/decima/decima.pdf)
-
-### Week 15: Network Scheduling
 - [ ] [FairCloud](https://www.mosharaf.com/papers/faircloud.pdf)
 - [ ] [VMWare Network Virtualization](https://benpfaff.org/papers/ovs.pdf)
 - [ ] [FastPass](https://fastpass.mit.edu/fastpass-sigcomm14.pdf)
 - [ ] [PicNIC](https://www.gribble.org/papers/picnic.pdf)
+
+# 📘 18.330: Introduction to Numerical Analysis (Spring 2012) Lecture Notes
+
+- [ ] [Lecture 1: Series and Sequences](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/resources/mit18_330s12_chapter1/)
+- [ ] [Lecture 2: Integrals as Sums and Derivatives as Differences](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/resources/mit18_330s12_chapter2/)
+- [ ] [Lecture 3: Interpolation](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/resources/mit18_330s12_chapter3/)
+- [ ] [Lecture 4: Nonlinear Equations](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/resources/mit18_330s12_chapter4/)
+- [ ] [Lecture 5: Methods for Ordinary Differential Equations](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/resources/mit18_330s12_chapter5/)
+- [ ] [Lecture 6: Fourier Analysis](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/resources/mit18_330s12_chapter6/)
+- [ ] [Lecture 7: Spectral Interpolation, Differentiation, Quadrature](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/resources/mit18_330s12_chapter7/)
+
+# 🖥️ 6.172: Performance Engineering of Software Systems (Fall 2018) Supplemental Readings
+
+- [ ] [GraphIt: A High-Performance Graph DSL](https://dl.acm.org/doi/10.1145/3276490)
+- [ ] [OpenTuner: An Extensible Framework for Program Autotuning](https://dl.acm.org/doi/10.1145/2628071.2628092)
+- [ ] [The Cilk++ Concurrency Platform](https://doi.org/10.1007/s11227-009-0301-8)
+- [ ] [How to Survive the Multicore Software Revolution (or at Least Survive the Hype)](https://software.intel.com/sites/default/files/m/d/4/1/d/8/How_to_Survive_the_Multicore_Software_Revolution.pdf)
+- [ ] [The Implementation of the Cilk-5 Multithreaded Language](https://doi.org/10.1145/277652.277725)
+- [ ] [The Cilkview Scalability Analyzer](https://dl.acm.org/doi/10.1145/1810479.1810502)
+- [ ] [Producing Wrong Data Without Doing Anything Obviously Wrong](https://doi.org/10.1145/1508244.1508275)
+- [ ] [Hoard: A Scalable Memory Allocator for Multithreaded Applications](https://www.cs.utexas.edu/users/emery/pubs/asplos2000.pdf)
+- [ ] [SuperMalloc: A Super Fast Multithreaded Malloc for 64-bit Machines](https://dl.acm.org/doi/10.1145/2754169.2754187)
+- [ ] [Tapir: Embedding Fork-Join Parallelism into LLVM’s Intermediate Representation](https://dl.acm.org/doi/10.1145/3018743.3018758)
+- [ ] [Cache-Oblivious Algorithms](https://dl.acm.org/doi/10.1145/2071379.2071383)
+- [ ] [Cache-Oblivious Algorithms and Data Structures](https://erikdemaine.org/papers/BRICS2002/paper.pdf)
+- [ ] [A Simple Deterministic Algorithm for Guaranteeing the Forward Progress of Transactions](https://dspace.mit.edu/handle/1721.1/102673)
+
+# Misc Papers
+
+- [ ] [Multi-Level Instruction Caching for Deep Learning Workloads](https://arxiv.org/pdf/2209.05433)
+- [ ] [XLA: Optimizing Compiler for Machine Learning](https://arxiv.org/abs/1707.06347)
+- [ ] [Understanding Performance of Tensor Computations](https://arxiv.org/pdf/1605.01078)
+- [ ] [The Conflict-Driven Clause Learning SAT Solvers](https://csl.cs.ucf.edu/~heinrich/papers/NATO.pdf)
+- [ ] [The Case for Learned SAT Solvers](https://dl.acm.org/doi/10.1145/3626780)
+- [ ] [Model Checking TinyOS Applications with T2](https://www.usenix.org/system/files/osdi20-pirelli.pdf)
+- [ ] [IEEE 754: An Interview with Prof. William Kahan](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf)
+- [ ] [Rethinking Floating Point for Deep Learning](https://arxiv.org/pdf/1902.01961)
+- [ ] [BFloat16: The Secret to High-Performance AI](https://arxiv.org/pdf/2106.08295)
+- [ ] [Cube-and-Conquer: A Hybrid SAT Solver for Hard Problems](https://www.cs.cmu.edu/~mheule/publications/cube.pdf)
+- [ ] [Finite Model Finding for Quantified Formulas](https://dl.acm.org/doi/10.1145/3706628.3708869)
+- [ ] [Efficient Implementation of Watch Literals](https://www2.cs.sfu.ca/CourseCentral/827/havens/papers/topic%237(NoGoodLearning)/Clause%20Watching/ecai02.pdf)
+- [ ] [The Next 700 SAT Solvers](https://arxiv.org/abs/2011.14203)
+- [ ] [High-Level Synthesis of Digital Systems](https://si2.epfl.ch/demichel/publications/archive/1992/hilevelsynthesis.pdf)
+
+# Misc Courses
+
+- [ ] [Parallel Programming Course – Aalto University](https://ppc.cs.aalto.fi/)
+- [ ] [Performance Engineering](https://en.algorithmica.org/hpc/)
+
+# Misc Textbooks
+
+- [ ] [Computer Networks: An Open Source Approach](https://womengovtcollegevisakha.ac.in/departments/Computer%20networks%20_%20an%20open%20source%20approach%20(%20PDFDrive%20).pdf)
+- [ ] [Computer Network Systems](http://home.ustc.edu.cn/~zhangm00/study/wangluoxitong/1.pdf)
+- [ ] [Algorithmica HPC Book Index](https://en.algorithmica.org/hpc)
+- [ ] [Computer Networks: A Systems Approach](https://acadndtechy.wordpress.com/wp-content/uploads/2015/01/computer-networks-a-systems-approach-larry-l-peterson-morgan-kaufmann.pdf)
+- [ ] [Systems Performance: Enterprise and the Cloud (2020)](https://raw.githubusercontent.com/samlee2015jp/cs_books/main/Systems.Performance.Enterprise.and.the.Cloud.2nd.Edition.2020.12.pdf)
+- [ ] [The TCP/IP Guide](http://www.tcpipguide.com/free/t_toc.htm)
+- [ ] [Handbook of Satisfiability](https://www.iospress.com/catalog/books/handbook-of-satisfiability-2)
+- [ ] [Computer Networks](https://content.e-bookshelf.de/media/reading/L-571775-c78b891224.pdf)
+- [ ] [TCP/IP Illustrated](https://www.r-5.org/files/books/computers/internals/net/Richard_Stevens-TCP-IP_Illustrated-EN.pdf)
