@@ -1,4 +1,6 @@
-# ECE 8803 - Spring 2025 Reading List
+# Things I'm Reading
+
+## ECE 8803 - Spring 2025 Reading List
 
 - [ ] [In-Datacenter Performance Analysis of a Tensor Processing Unit](https://dl.acm.org/doi/10.1145/3079856.3080246)
 - [ ] [A Systematic Methodology for Characterizing Scalability of DNN Accelerators using SCALE-Sim](https://ieeexplore.ieee.org/document/9238602)
@@ -95,7 +97,7 @@
 - [ ] [FastPass](https://fastpass.mit.edu/fastpass-sigcomm14.pdf)
 - [ ] [PicNIC](https://www.gribble.org/papers/picnic.pdf)
 
-# 📘 18.330: Introduction to Numerical Analysis (Spring 2012) Lecture Notes
+## 18.330: Introduction to Numerical Analysis (Spring 2012) Lecture Notes
 
 - [ ] [Lecture 1: Series and Sequences](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/resources/mit18_330s12_chapter1/)
 - [ ] [Lecture 2: Integrals as Sums and Derivatives as Differences](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/resources/mit18_330s12_chapter2/)
@@ -105,7 +107,7 @@
 - [ ] [Lecture 6: Fourier Analysis](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/resources/mit18_330s12_chapter6/)
 - [ ] [Lecture 7: Spectral Interpolation, Differentiation, Quadrature](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/resources/mit18_330s12_chapter7/)
 
-# 🖥️ 6.172: Performance Engineering of Software Systems (Fall 2018) Supplemental Readings
+## 6.172: Performance Engineering of Software Systems (Fall 2018) Supplemental Readings
 
 - [ ] [GraphIt: A High-Performance Graph DSL](https://dl.acm.org/doi/10.1145/3276490)
 - [ ] [OpenTuner: An Extensible Framework for Program Autotuning](https://dl.acm.org/doi/10.1145/2628071.2628092)
@@ -121,7 +123,7 @@
 - [ ] [Cache-Oblivious Algorithms and Data Structures](https://erikdemaine.org/papers/BRICS2002/paper.pdf)
 - [ ] [A Simple Deterministic Algorithm for Guaranteeing the Forward Progress of Transactions](https://dspace.mit.edu/handle/1721.1/102673)
 
-# Misc Papers
+## Misc Papers
 
 - [ ] [Multi-Level Instruction Caching for Deep Learning Workloads](https://arxiv.org/pdf/2209.05433)
 - [ ] [XLA: Optimizing Compiler for Machine Learning](https://arxiv.org/abs/1707.06347)
@@ -138,12 +140,12 @@
 - [ ] [The Next 700 SAT Solvers](https://arxiv.org/abs/2011.14203)
 - [ ] [High-Level Synthesis of Digital Systems](https://si2.epfl.ch/demichel/publications/archive/1992/hilevelsynthesis.pdf)
 
-# Misc Courses
+## Misc Courses
 
 - [ ] [Parallel Programming Course – Aalto University](https://ppc.cs.aalto.fi/)
 - [ ] [Performance Engineering](https://en.algorithmica.org/hpc/)
 
-# Misc Textbooks
+## Misc Textbooks
 
 - [ ] [Computer Networks: An Open Source Approach](https://womengovtcollegevisakha.ac.in/departments/Computer%20networks%20_%20an%20open%20source%20approach%20(%20PDFDrive%20).pdf)
 - [ ] [Computer Network Systems](http://home.ustc.edu.cn/~zhangm00/study/wangluoxitong/1.pdf)
