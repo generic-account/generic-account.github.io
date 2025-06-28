@@ -139,11 +139,13 @@
 - [ ] [Efficient Implementation of Watch Literals](https://www2.cs.sfu.ca/CourseCentral/827/havens/papers/topic%237(NoGoodLearning)/Clause%20Watching/ecai02.pdf)
 - [ ] [The Next 700 SAT Solvers](https://arxiv.org/abs/2011.14203)
 - [ ] [High-Level Synthesis of Digital Systems](https://si2.epfl.ch/demichel/publications/archive/1992/hilevelsynthesis.pdf)
+- [ ] [Hash Table on FPGA](https://zistvan.github.io/doc/paperM3C_3.pdf)
 
 ## Misc Courses
 
 - [ ] [Parallel Programming Course – Aalto University](https://ppc.cs.aalto.fi/)
 - [ ] [Performance Engineering](https://en.algorithmica.org/hpc/)
+- [ ] [Digital Systems Design](https://www.researchgate.net/publication/325581786_Digital_Systems_Design_Course_Slides?channel=doi&linkId=5b170d9145851547bba32d54&showFulltext=true)
 
 ## Misc Textbooks
 
@@ -156,3 +158,5 @@
 - [ ] [Handbook of Satisfiability](https://www.iospress.com/catalog/books/handbook-of-satisfiability-2)
 - [ ] [Computer Networks](https://content.e-bookshelf.de/media/reading/L-571775-c78b891224.pdf)
 - [ ] [TCP/IP Illustrated](https://www.r-5.org/files/books/computers/internals/net/Richard_Stevens-TCP-IP_Illustrated-EN.pdf)
+- [ ] [How to Scale Your Model](https://jax-ml.github.io/scaling-book/)
+- [ ] [Programming Massively Parallel Processors](https://github.com/h3ct0rjs/HighPerformanceComputing/blob/master/BookRef/Programming%20Massively%20Parallel%20Processors.pdf)
