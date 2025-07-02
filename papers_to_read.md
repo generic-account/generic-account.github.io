@@ -151,7 +151,7 @@
 
 - [ ] [Computer Networks: An Open Source Approach](https://womengovtcollegevisakha.ac.in/departments/Computer%20networks%20_%20an%20open%20source%20approach%20(%20PDFDrive%20).pdf)
 - [ ] [Computer Network Systems](http://home.ustc.edu.cn/~zhangm00/study/wangluoxitong/1.pdf)
-- [ ] [Algorithmica HPC Book Index](https://en.algorithmica.org/hpc)
+- [x] [Algorithmica HPC Book Index](https://en.algorithmica.org/hpc)
 - [ ] [Computer Networks: A Systems Approach](https://acadndtechy.wordpress.com/wp-content/uploads/2015/01/computer-networks-a-systems-approach-larry-l-peterson-morgan-kaufmann.pdf)
 - [ ] [Systems Performance: Enterprise and the Cloud (2020)](https://raw.githubusercontent.com/samlee2015jp/cs_books/main/Systems.Performance.Enterprise.and.the.Cloud.2nd.Edition.2020.12.pdf)
 - [ ] [The TCP/IP Guide](http://www.tcpipguide.com/free/t_toc.htm)
