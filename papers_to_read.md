@@ -146,6 +146,7 @@
 - [ ] [Parallel Programming Course – Aalto University](https://ppc.cs.aalto.fi/)
 - [ ] [Performance Engineering](https://en.algorithmica.org/hpc/)
 - [ ] [Digital Systems Design](https://www.researchgate.net/publication/325581786_Digital_Systems_Design_Course_Slides?channel=doi&linkId=5b170d9145851547bba32d54&showFulltext=true)
+- [ ] [Linux Kernel Development](https://training.linuxfoundation.org/training/a-beginners-guide-to-linux-kernel-development-lfd103/)
 
 ## Misc Textbooks
 
