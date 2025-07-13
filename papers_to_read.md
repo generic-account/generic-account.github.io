@@ -36,7 +36,7 @@
 
 # CS8803 - Datacenter Networks & Systems (Spring 2022)
 
-- [ ] [Berkeley View on Cloud](https://www.cs.yale.edu/homes/yu-minlan/teaching/fall16/berkeley_cloud.pdf)
+- [*] [Berkeley View on Cloud](https://www.cs.yale.edu/homes/yu-minlan/teaching/fall16/berkeley_cloud.pdf)
 - [ ] [Datacenter as a Computer](https://www.cs.yale.edu/homes/yu-minlan/teaching/fall16/dc-computer.pdf)
 - [ ] [Berkeley View on Serverless](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-3.pdf)
 - [ ] [Fifth Epoch of Distributed Computing (YouTube)](https://www.youtube.com/watch?v=ZJIEzqO3n5E)
