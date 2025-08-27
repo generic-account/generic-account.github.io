@@ -1,31 +1,52 @@
 @import "{{ site.theme }}";
 
-/* Monochrome tweaks */
-body { letter-spacing: 0.01em; }
+/* Dark mode base */
+:root { color-scheme: dark; }          /* improves form controls, etc. */
+html, body { background: #000; }
+body { color: #f5f5f5; }
 
+/* Center the content block (not the text) */
+.wrapper,
+.page-content,
+main,
+.site-footer,
+.site-header {
+  max-width: 760px;                     /* adjust to taste: 700–900px */
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-content { padding: 2rem 1.25rem 3rem; }
+.site-header, .site-footer { background: transparent; border: 0; }
+.site-header { margin: 0; padding: 0; } /* pairs with your empty header include */
 
-h1, h2, h3 { font-weight: 700; }
+/* Links: clean monochrome */
+a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.7);
+}
+a:hover, a:focus {
+  background: #fff;
+  color: #000;
+}
 
+/* Dividers & typography polish */
+hr { border: 0; border-top: 1px solid #333; margin: 2rem 0; }
+h1, h2, h3 { color: #fff; }
+p { line-height: 1.6; }
 
-main { max-width: 820px; }
+/* Code blocks & inline code on dark bg */
+pre, code, kbd, samp {
+  background: #0f0f0f;
+  color: #f5f5f5;
+}
+pre { border: 1px solid #333; padding: 0.9rem; overflow: auto; }
+code { border-radius: 4px; padding: 0.1em 0.35em; }
 
+/* Blockquotes & tables */
+blockquote { color: #d0d0d0; border-left: 3px solid #333; }
+table { border-color: #333; }
+th, td { border-color: #333; }
 
-/* Links: black underline; invert on hover */
-a { text-decoration: none; border-bottom: 1px solid #000; }
-a:hover { background: #000; color: #fff; }
-
-
-/* Section spacing */
-section, .section { margin: 2rem 0; }
-
-
-/* Optional: make lists feel like tidy project entries while staying Markdown-only */
-ul.project-list { list-style: disc; padding-left: 1.2rem; }
-ul.project-list li { margin: 0.45rem 0; }
-ul.project-list li em { opacity: 0.85; }
-
-
-hr { border: 0; border-top: 1px solid #000; margin: 2rem 0; }
-
-
-.site-footer { font-size: 0.9rem; opacity: 0.7; }
+/* Optional: hide the page title in the header entirely (you asked for no header chrome) */
+.site-header .site-title, .site-header .site-description { display: none; }

@@ -15,19 +15,14 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 ## Projects
 
 
-- **Esperanto Morphological Tokenization** — Rule‑based tokenization for Esperanto morphology; designed for clarity and reproducibility.
-<https://generic-account.github.io/Esperanto-Morphological-Tokenization>
-- **OCR Accuracy Metrics Without Ground Truth** — Quantifies OCR performance using proxy metrics and distributional checks.
-<https://generic-account.github.io/OCR-Accuracy-Without-Ground-Truth-Data>
-- **AWS SageMaker & User Management Workshop** — Hands‑on notebooks introducing SageMaker workflows and multi‑user setups.
-<https://generic-account.github.io/Sagemaker-hello-world-2>
-- **AWS Textract & Comprehend Workshop** — Document intelligence pipeline: ingestion, extraction, and semantic analysis.
-<https://generic-account.github.io/Amazon-Textract-Workshop>
-- **Embedding-based Search & Visualizations** — HNSW search, dimensionality reduction, and interactive exploration.
-<https://generic-account.github.io/embedding-search-and-visualizations>
-- **Graphing the English Language** — Network‑theoretic synonym maps; path‑based exploration of semantic neighborhoods.
-<https://generic-account.github.io/Graphing-the-English-Language>
 
+
+- [**Esperanto Morphological Tokenization**](https://generic-account.github.io/Esperanto-Morphological-Tokenization) — Rule‑based tokenization for Esperanto morphology; designed for clarity and reproducibility.
+- [**OCR Accuracy Metrics Without Ground Truth**](https://generic-account.github.io/OCR-Accuracy-Without-Ground-Truth-Data) — Quantifies OCR performance using proxy metrics and distributional checks.
+- [**AWS SageMaker & User Management Workshop**](https://generic-account.github.io/Sagemaker-hello-world-2) — Hands‑on notebooks introducing SageMaker workflows and multi‑user setups.
+- [**AWS Textract & Comprehend Workshop**](https://generic-account.github.io/Amazon-Textract-Workshop) — Document intelligence pipeline: ingestion, extraction, and semantic analysis.
+- [**Embedding-based Search & Visualizations**](https://generic-account.github.io/embedding-search-and-visualizations) — HNSW search, dimensionality reduction, and interactive exploration.
+- [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) — Network‑theoretic synonym maps; path‑based exploration of semantic neighborhoods.
 
 ---
 
