@@ -1,17 +1,15 @@
 title: Gordon Lichtstein
 description: A website for my code, projects, and bio
-remote_theme: pages-themes/minimal@v0.2.0
+theme: jekyll-theme-minimal
 
 plugins:
-- jekyll-remote-theme
 - jekyll-seo-tag
 - jekyll-sitemap
 
+# url: "https://generic-account.github.io"
 
 social:
 name: Gordon Lichtstein
 links:
 - https://www.linkedin.com/in/gordon-lichtstein/
 - https://github.com/generic-account
-
-url: "https://generic-account.github.io"
