@@ -1,8 +1,4 @@
 
-
-# Gordon Lichtstein
-
-
 Welcome! I’m an MIT sophomore studying Electrical Engineering & Computer Science and Mathematics. I focus on programming languages and computer architecture, with interests in performance engineering, compiler optimization, machine learning, numerical methods, and finance.
 
 
@@ -14,16 +10,13 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 
 ## Projects
 
-
-
-
-- [**Esperanto Morphological Tokenization**](https://generic-account.github.io/Esperanto-Morphological-Tokenization) — Rule‑based tokenization for Esperanto morphology; designed for clarity and reproducibility.
-- [**OCR Accuracy Metrics Without Ground Truth**](https://generic-account.github.io/OCR-Accuracy-Without-Ground-Truth-Data) — Quantifies OCR performance using proxy metrics and distributional checks.
-- [**AWS SageMaker & User Management Workshop**](https://generic-account.github.io/Sagemaker-hello-world-2) — Hands‑on notebooks introducing SageMaker workflows and multi‑user setups.
-- [**AWS Textract & Comprehend Workshop**](https://generic-account.github.io/Amazon-Textract-Workshop) — Document intelligence pipeline: ingestion, extraction, and semantic analysis.
-- [**Embedding-based Search & Visualizations**](https://generic-account.github.io/embedding-search-and-visualizations) — HNSW search, dimensionality reduction, and interactive exploration.
-- [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) — Network‑theoretic synonym maps; path‑based exploration of semantic neighborhoods.
-
+- [**Esperanto Morphological Tokenization**](https://generic-account.github.io/Esperanto-Morphological-Tokenization) - Markov model-based semantic tokenization for Esperanto.
+- [**OCR Accuracy Metrics Without Ground Truth**](https://generic-account.github.io/OCR-Accuracy-Without-Ground-Truth-Data) - Quantifies OCR performance using proxy metrics.
+- [**AWS SageMaker & User Management Workshop**](https://generic-account.github.io/Sagemaker-hello-world-2) - Hands‑on notebooks introducing AWS SageMaker workflow and setup.
+- [**AWS Textract & Comprehend Workshop**](https://generic-account.github.io/Amazon-Textract-Workshop) - Hands-on workshop tutorial on document data extraction for UCSF.
+- [**Embedding-based Search & Visualizations**](https://generic-account.github.io/embedding-search-and-visualizations) - Embedding search, dimensionality reduction, and interactive exploration.
+- [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) - Network‑theoretic synonym maps and exploration of semantic neighborhoods.
+- [**On the Absense of Tie-Breaking and Rounding Overflow in Floating-Point Division**](https://generic-account.github.io/Some_Floating_Point_Proofs.pdf) - Proofs relating to floating point division rounding 
 ---
 
 
