@@ -16,7 +16,8 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 - [**AWS Textract & Comprehend Workshop**](https://generic-account.github.io/Amazon-Textract-Workshop) - Hands-on workshop tutorial on document data extraction for UCSF.
 - [**Embedding-based Search & Visualizations**](https://generic-account.github.io/embedding-search-and-visualizations) - Embedding search, dimensionality reduction, and interactive exploration.
 - [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) - Network‑theoretic synonym maps and exploration of semantic neighborhoods.
-- [**On the Absense of Tie-Breaking and Rounding Overflow in Floating-Point Division**](https://generic-account.github.io/Some_Floating_Point_Proofs.pdf) - Proofs relating to floating point division rounding 
+- [**On the Absense of Tie-Breaking and Rounding Overflow in Floating-Point Division**](https://generic-account.github.io/Some_Floating_Point_Proofs.pdf) - Proofs relating to floating point division rounding.
+
 ---
 
 
