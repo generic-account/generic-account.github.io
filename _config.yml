@@ -6,7 +6,7 @@ plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
 
-# url: "https://generic-account.github.io"
+url: "https://generic-account.github.io"
 
 social:
 name: Gordon Lichtstein
