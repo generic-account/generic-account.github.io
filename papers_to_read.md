@@ -161,3 +161,8 @@
 - [ ] [TCP/IP Illustrated](https://www.r-5.org/files/books/computers/internals/net/Richard_Stevens-TCP-IP_Illustrated-EN.pdf)
 - [ ] [How to Scale Your Model](https://jax-ml.github.io/scaling-book/)
 - [ ] [Programming Massively Parallel Processors](https://github.com/h3ct0rjs/HighPerformanceComputing/blob/master/BookRef/Programming%20Massively%20Parallel%20Processors.pdf)
+- [ ] 
+
+## Misc Blogs
+
+- [x] [Inside vLLM: Anatomy of a High-Throughput LLM Inference System](https://www.aleksagordic.com/blog/vllm)
