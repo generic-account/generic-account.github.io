@@ -20,6 +20,7 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 - [**Bit Hacks Verified**](https://generic-account.github.io/bit-hacks-verified/) - Formal verification of bit hacks and optimizations in Rocq (very incomplete).
 - [**Random Polynomial Toolkit**](https://github.com/generic-account/random-polynomials) - Framework for generating, analyzing, and visualizing random polynomial ensembles
 - **TinyIR (Coming Soon)** - Functional Python GPU IR, with JAX, Numpy, Torch.func, and other backends
+- **Finesse (Coming Soon)** -  Python FSM eDSL and toolkit including visualzation, optimization, and verilog codegen 
 
 
 ---
