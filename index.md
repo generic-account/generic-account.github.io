@@ -18,7 +18,7 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 - [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) - Network‑theoretic synonym maps and exploration of semantic neighborhoods.
 - [**On the Absense of Tie-Breaking and Rounding Overflow in Floating-Point Division**](https://generic-account.github.io/Some_Floating_Point_Proofs.pdf) - Proofs relating to floating point division rounding.
 - [**Bit Hacks Verified**](https://generic-account.github.io/bit-hacks-verified/) - Formal verification of bit hacks and optimizations in Rocq (very incomplete).
-- [**Random Polynomial Toolkit**](https://github.com/generic-account/random-polynomials) - A Python framework for generating, analyzing, and automatically visualizing random polynomial ensembles, with a unique lazy experiment system
+- [**Random Polynomial Toolkit**](https://github.com/generic-account/random-polynomials) - Framework for generating, analyzing, and visualizing random polynomial ensembles
 - **TinyIR (Coming Soon)** - Functional Python GPU IR, with JAX, Numpy, Torch.func, and other backends
 ---
 
