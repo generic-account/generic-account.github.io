@@ -26,15 +26,6 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 ---
 
 
-## Things I’m Reading
-
-
-See the list: <https://generic-account.github.io/papers_to_read>
-
-
----
-
-
 ## Contact
 
 
