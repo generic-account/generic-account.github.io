@@ -19,8 +19,8 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 - [**On the Absense of Tie-Breaking and Rounding Overflow in Floating-Point Division**](https://generic-account.github.io/Some_Floating_Point_Proofs.pdf) - Proofs relating to floating point division rounding.
 - [**Bit Hacks Verified**](https://generic-account.github.io/bit-hacks-verified/) - Formal verification of bit hacks and optimizations in Rocq (very incomplete).
 - [**Random Polynomial Toolkit**](https://github.com/generic-account/random-polynomials) - Framework for generating, analyzing, and visualizing random polynomial ensembles
+- [**Finesse**](https://github.com/generic-account/finesse) -  Python FSM eDSL and toolkit including visualzation, optimization, and verilog codegen 
 - **TinyIR (Coming Soon)** - Functional Python GPU IR, with JAX, Numpy, Torch.func, and other backends
-- **Finesse (Coming Soon)** -  Python FSM eDSL and toolkit including visualzation, optimization, and verilog codegen 
 
 
 ---
