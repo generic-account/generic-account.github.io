@@ -21,6 +21,7 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 - [**Finesse**](https://github.com/generic-account/finesse) -  Python FSM eDSL and toolkit including visualzation, optimization, and verilog codegen 
 - **TinyIR (Coming Soon)** - Functional Python GPU IR, with JAX, Numpy, Torch.func, and other backends
 - **Bit Hacks Verified (Coming Soon)** - Formal verification of bit hacks and optimizations in Rocq
+- **ParaDPLL (Coming Soon)** - FPGA SAT Solver written in SystemVerilog for 6.205 final project, somewhat optimized
 
 
 
