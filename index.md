@@ -10,6 +10,7 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 
 ## Projects
 - [**ParaDPLL**](https://generic-account.github.io/ParaDPLL_Final_Report-1.pdf) - FPGA SAT Solver written in SystemVerilog for 6.205 final project, somewhat optimized.
+- [**Interval Arithmetic**](https://github.com/generic-account/interval-arithmetic) - Library for interval arithmetic (finding the ranges of functions), using custom Taylor series patchwork, arbitrary degree autodiff, efficient query compilation & caching
 - [**Finesse**](https://github.com/generic-account/finesse) -  Python FSM eDSL and toolkit including visualzation, optimization, and verilog codegen (used to make ParaDPLL visualizations).
 - [**Random Polynomial Toolkit**](https://github.com/generic-account/random-polynomials) - Framework for generating, analyzing, and visualizing random polynomial ensembles.
 - [**On the Absense of Tie-Breaking and Rounding Overflow in Floating-Point Division**](https://generic-account.github.io/Some_Floating_Point_Proofs.pdf) - Proofs relating to floating point division rounding.
