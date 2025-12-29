@@ -10,6 +10,7 @@
 - [BOLT: A Practical Binary Optimizer for Data Centers and Beyond](https://research.facebook.com/publications/bolt-a-practical-binary-optimizer-for-data-centers-and-beyond/)
 - [How to Scale Your Model](https://jax-ml.github.io/scaling-book/)
 - [SAT-Accel: A Modern SAT Solver on a FPGA](https://dl.acm.org/doi/10.1145/3706628.3708869)
+- [Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures](https://arxiv.org/abs/2505.09343)
 
 <!-- 
 ## ECE 8803 - Spring 2025 Reading List
