@@ -31,8 +31,9 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 
 ## [Things I've Read and Enjoyed](https://generic-account.github.io/papers_list)
 
-## Contact
+---
 
+## Contact
 
 - Personal: glichtstein [at] gmail [dot] com
 - School: glicht [at] mit [dot] edu
