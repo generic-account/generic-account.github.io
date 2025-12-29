@@ -25,6 +25,7 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 - [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) - Network‑theoretic synonym maps and exploration of semantic neighborhoods.
 - **Bit Hacks Verified (Coming Soon)** - Formal verification of bit hacks and optimizations in Rocq.
 - **MuZero for Arimaa (Coming Soon)** - Python Arimaa implementation for training MuZero-based model.
+- **MLGO Peephole Superoptimizer for LLVM IR** - Automatic policy-value guided MCTS search for rewrites, verified with Alive2
 
 ---
 
