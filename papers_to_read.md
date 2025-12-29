@@ -1,7 +1,7 @@
 # Things I've Read and Enjoyed
 
 - [Python Design Patterns](https://python-patterns.guide/)
-- [https://dl.acm.org/doi/10.1145/1508284.1508275](Producing wrong data without doing anything obviously wrong!)
+- [Producing wrong data without doing anything obviously wrong!](https://dl.acm.org/doi/10.1145/1508284.1508275)
 - [Inside vLLM: Anatomy of a High-Throughput LLM Inference System](https://www.aleksagordic.com/blog/vllm)
 - [What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
 - [Algorithms for Modern Hardware](https://en.algorithmica.org/hpc/)
