@@ -1,5 +1,17 @@
-# Things I'm Reading
+# Things I've Read and Enjoyed
 
+[Python Design Patterns](https://python-patterns.guide/)
+[https://dl.acm.org/doi/10.1145/1508284.1508275](Producing wrong data without doing anything obviously wrong!)
+[Inside vLLM: Anatomy of a High-Throughput LLM Inference System](https://www.aleksagordic.com/blog/vllm)
+[What Every Programmer Should Know About Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
+[Algorithms for Modern Hardware](https://en.algorithmica.org/hpc/)
+[How fast are Linux pipes anyway?](https://mazzo.li/posts/fast-pipes.html)
+[Superoptimizer - A Look at the Smallest Program](https://courses.cs.washington.edu/courses/cse501/15sp/papers/massalin.pdf)
+[BOLT: A Practical Binary Optimizer for Data Centers and Beyond](https://research.facebook.com/publications/bolt-a-practical-binary-optimizer-for-data-centers-and-beyond/)
+[How to Scale Your Model](https://jax-ml.github.io/scaling-book/)
+[SAT-Accel: A Modern SAT Solver on a FPGA](https://dl.acm.org/doi/10.1145/3706628.3708869)
+
+<!-- 
 ## ECE 8803 - Spring 2025 Reading List
 
 - [ ] [In-Datacenter Performance Analysis of a Tensor Processing Unit](https://dl.acm.org/doi/10.1145/3079856.3080246)
@@ -166,3 +178,4 @@
 ## Misc Blogs
 
 - [x] [Inside vLLM: Anatomy of a High-Throughput LLM Inference System](https://www.aleksagordic.com/blog/vllm)
+-->
