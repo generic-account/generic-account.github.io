@@ -17,6 +17,7 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 - [**On the Absense of Tie-Breaking and Rounding Overflow in Floating-Point Division**](https://generic-account.github.io/Some_Floating_Point_Proofs.pdf) - Proofs relating to floating point division rounding.
 - [**TinyIR**](https://github.com/generic-account/tinyir-lang) - Functional Python GPU IR, with JAX, Numpy, Torch.func, and other backends.
 - [**Esperanto Morphological Tokenization**](https://generic-account.github.io/Esperanto-Morphological-Tokenization) - Markov model-based semantic tokenization for Esperanto.
+- [**SigmaGo**](https://github.com/generic-account/sigma_go) - AlphaZero-style Go playing ML model integrating minimax + MCTS + policy value neural networks
 - [**OCR Accuracy Metrics Without Ground Truth**](https://generic-account.github.io/OCR-Accuracy-Without-Ground-Truth-Data) - Quantifies OCR performance using proxy metrics.
 - [**Split Stenography Keyboard**](https://github.com/generic-account/split-steno-keyboard) - Custom low profile split keyboard for stenography and standard QWERTY layout.
 - [**AWS SageMaker & User Management Workshop**](https://generic-account.github.io/Sagemaker-hello-world-2) - Hands‑on notebooks introducing AWS SageMaker workflow and setup.
