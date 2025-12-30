@@ -20,12 +20,12 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 - [**SigmaGo**](https://github.com/generic-account/sigma_go) - AlphaZero-style Go playing ML model integrating minimax + MCTS + policy value neural networks
 - [**OCR Accuracy Metrics Without Ground Truth**](https://generic-account.github.io/OCR-Accuracy-Without-Ground-Truth-Data) - Quantifies OCR performance using proxy metrics.
 - [**Split Stenography Keyboard**](https://github.com/generic-account/split-steno-keyboard) - Custom low profile split keyboard for stenography and standard QWERTY layout.
+- [**MuZero for Arimaa**](https://github.com/generic-account/muzero-general-arimaa) - Python Arimaa implementation for training MuZero-based model.
 - [**AWS SageMaker & User Management Workshop**](https://generic-account.github.io/Sagemaker-hello-world-2) - Hands‑on notebooks introducing AWS SageMaker workflow and setup.
 - [**AWS Textract & Comprehend Workshop**](https://generic-account.github.io/Amazon-Textract-Workshop) - Hands-on workshop tutorial on document data extraction for UCSF.
 - [**Embedding-based Search & Visualizations**](https://generic-account.github.io/embedding-search-and-visualizations) - Embedding search, dimensionality reduction, and interactive exploration.
 - [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) - Network‑theoretic synonym maps and exploration of semantic neighborhoods.
 - **Bit Hacks Verified (Coming Soon)** - Formal verification of bit hacks and optimizations in Rocq.
-- **MuZero for Arimaa (Coming Soon)** - Python Arimaa implementation for training MuZero-based model.
 - **MLGO Peephole Superoptimizer for LLVM IR (Coming Soon)** - Automatic policy-value guided MCTS search for rewrites, verified with Alive2
 
 ---
