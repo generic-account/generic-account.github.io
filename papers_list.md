@@ -13,6 +13,7 @@
 - [Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures](https://arxiv.org/abs/2505.09343)
 - [The Architecture of Open Source Applications](https://aosabook.org/en/)
 - [From Hardware Description Languages to Accelerator Design Languages](https://www.cs.cornell.edu/~asampson/blog/adl.html)
+- [Breaking the x86 ISA](https://raw.githubusercontent.com/xoreaxeaxeax/sandsifter/master/references/domas_breaking_the_x86_isa_wp.pdf)
 
 <!-- 
 ## ECE 8803 - Spring 2025 Reading List
