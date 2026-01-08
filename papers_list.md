@@ -15,6 +15,7 @@
 - [From Hardware Description Languages to Accelerator Design Languages](https://www.cs.cornell.edu/~asampson/blog/adl.html)
 - [Breaking the x86 ISA](https://raw.githubusercontent.com/xoreaxeaxeax/sandsifter/master/references/domas_breaking_the_x86_isa_wp.pdf)
 - [Max Dama on Automated Trading](http://isomorphisms.sdf.org/maxdama.pdf)
+- [What every systems programmer should know about concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
 
 <!-- 
 ## ECE 8803 - Spring 2025 Reading List
