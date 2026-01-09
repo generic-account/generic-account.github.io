@@ -16,6 +16,7 @@
 - [Breaking the x86 ISA](https://raw.githubusercontent.com/xoreaxeaxeax/sandsifter/master/references/domas_breaking_the_x86_isa_wp.pdf)
 - [Max Dama on Automated Trading](http://isomorphisms.sdf.org/maxdama.pdf)
 - [What every systems programmer should know about concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
+- [Feynman Lectures on Physics](https://www.feynmanlectures.caltech.edu/)
 
 <!-- 
 ## ECE 8803 - Spring 2025 Reading List
