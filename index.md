@@ -36,7 +36,7 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 - **Bit Hacks Verified (Coming Soon)** - Formal verification of bit hacks and optimizations in Rocq.
 
 ### Random Visualizations
-- [**College Rankings over Time**](https://github.com/generic-account/rankings)
+- [**College Rankings over Time**](https://generic-account.github.io/rankings) - US News national college rankings over time, through 2026.
 - [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) - Network-theoretic synonym maps and exploration of semantic neighborhoods.
 
   
