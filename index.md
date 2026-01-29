@@ -31,10 +31,10 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 
 - [**Interval Arithmetic**](https://github.com/generic-account/interval-arithmetic) - Library for interval arithmetic (finding the ranges of functions), using custom Taylor series patchwork, arbitrary degree autodiff, compilation, efficient patch caching.
 - [**Random Polynomial Toolkit**](https://github.com/generic-account/random-polynomials) - Framework for generating, analyzing, and visualizing random polynomial ensembles.
+- [**High Dimensional Probability Primer**](https://generic-account.github.io/HDP_Primer.pdf) - LaTeX primer on key high dimensional probability concepts, from MIT 2026 DRP talk on HDP.
 - [**Dice DSL**](https://github.com/generic-account/dice-dsl) - DSL describing probabilistic game rules, automatically solving for optimal play, with efficient decision-tree codegen.
 - [**On the Absense of Tie-Breaking and Rounding Overflow in Floating-Point Division**](https://generic-account.github.io/Some_Floating_Point_Proofs.pdf) - Proofs relating to floating point division rounding.
 - **Bit Hacks Verified (Coming Soon)** - Formal verification of bit hacks and optimizations in Rocq.
-- **High Dimensional Probability Primer (Coming Soon)** - LaTeX primer on key high dimensional probability concepts, from MIT 2026 DRP talk on HDP
 
 ### Random Visualizations
 - [**College Rankings over Time**](https://generic-account.github.io/rankings) - US News national college rankings over time, through 2026.
