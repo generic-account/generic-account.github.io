@@ -43,7 +43,7 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
   
 ---
 
-## [Things I've Read and Enjoyed](https://generic-account.github.io/papers_list)
+## [A Few of My Favorite Things](https://generic-account.github.io/papers_list)
 
 ---
 
