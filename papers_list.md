@@ -19,6 +19,7 @@
 - [Feynman Lectures on Physics](https://www.feynmanlectures.caltech.edu/)
 - [Open SSF's Compiler Options Hardening Guide for C and C++](https://best.openssf.org/Compiler-Hardening-Guides/Compiler-Options-Hardening-Guide-for-C-and-C++.html)
 - [NUMA Deep Dive](https://frankdenneman.nl/posts/2016-07-06-introduction-2016-numa-deep-dive-series/)
+- [WikiChip's Look At The AMD Zen 2 Core](https://fuse.wikichip.org/news/2458/a-look-at-the-amd-zen-2-core/)
 
 <!-- 
 ## ECE 8803 - Spring 2025 Reading List
