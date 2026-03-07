@@ -17,6 +17,7 @@
 - [Max Dama on Automated Trading](http://isomorphisms.sdf.org/maxdama.pdf)
 - [What every systems programmer should know about concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
 - [Feynman Lectures on Physics](https://www.feynmanlectures.caltech.edu/)
+- [Open SSF's Compiler Options Hardening Guide for C and C++](https://best.openssf.org/Compiler-Hardening-Guides/Compiler-Options-Hardening-Guide-for-C-and-C++.html)
 
 <!-- 
 ## ECE 8803 - Spring 2025 Reading List
