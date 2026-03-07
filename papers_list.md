@@ -1,4 +1,4 @@
-# Things I've Read and Enjoyed
+# A Few of My Favorite Things I've Read
 
 - [Python Design Patterns](https://python-patterns.guide/)
 - [Producing wrong data without doing anything obviously wrong!](https://dl.acm.org/doi/10.1145/1508284.1508275)
