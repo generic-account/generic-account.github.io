@@ -49,8 +49,7 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 
 ## Contact
 
-- Personal: glichtstein [at] gmail [dot] com
-- School: glicht [at] mit [dot] edu
+- Email: glicht [at] mit [dot] edu
 - LinkedIn: <https://www.linkedin.com/in/gordon-lichtstein/>
 - GitHub: <https://github.com/generic-account>
 
