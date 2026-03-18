@@ -1,8 +1,8 @@
 
-Welcome! I’m an MIT sophomore studying Electrical Engineering & Computer Science and Mathematics. I focus on programming languages and computer architecture, with interests in performance engineering, compiler optimization, machine learning, numerical methods, and finance. I especially like making Python eDSLs.
+Welcome! I’m an MIT sophomore studying Electrical Engineering & Computer Science (6-5) and Mathematics (18), minoring in Linguistics. I focus on programming languages and computer architecture, with interests in performance engineering, compilers, ML, and numerical methods. I especially like making Python eDSLs.
 
 
-Outside of school I enjoy language learning, radio, music, environmental sustainability, and time in nature.
+Outside of school I enjoy language learning, amateur radio, music, nature, and reading.
 
 
 ---
