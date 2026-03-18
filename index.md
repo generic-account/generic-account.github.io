@@ -36,10 +36,10 @@ Outside of school I enjoy language learning, radio, music, environmental sustain
 - [**On the Absense of Tie-Breaking and Rounding Overflow in Floating-Point Division**](https://generic-account.github.io/Some_Floating_Point_Proofs.pdf) - Proofs relating to floating point division rounding.
 - **Bit Hacks Verified (Coming Soon)** - Formal verification of bit hacks and optimizations in Rocq.
 
-### Random Visualizations
+### Random
+- [**Interactive Hayes Feature Chart**](https://generic-account.github.io/interactive-hayes-feature-chart/) - An interactive phonological feature chart based on Hayes' 2009 Introductory Phonology
 - [**College Rankings over Time**](https://generic-account.github.io/rankings) - US News national college rankings over time, through 2026.
 - [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) - Network-theoretic synonym maps and exploration of semantic neighborhoods.
-
   
 ---
 
