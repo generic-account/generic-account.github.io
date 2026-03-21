@@ -1,5 +1,5 @@
 
-Welcome! I’m an MIT sophomore studying Electrical Engineering & Computer Science (6-5) and Mathematics (18), minoring in Linguistics (24). I focus on programming languages and computer architecture, with interests in performance engineering, compilers, ML, and numerical methods. I especially like making Python eDSLs.
+Welcome! I’m an MIT sophomore studying Electrical Engineering & Computer Science (6-5) and Mathematics (18), minoring in Linguistics (24). I focus on programming languages and computer architecture, with interests in performance engineering, compilers, ML, and numerical methods. I especially like making Python eDSLs, and I've recently gotten slightly obsessed with Asahi Linux, Nix, and Apple silicon.
 
 
 Outside of school I enjoy language learning, amateur radio, music, nature, and reading.
@@ -40,7 +40,7 @@ Outside of school I enjoy language learning, amateur radio, music, nature, and r
 - [**Interactive Hayes Feature Chart**](https://generic-account.github.io/interactive-hayes-feature-chart/) - An interactive phonological feature chart based on Hayes' 2009 Introductory Phonology
 - [**College Rankings over Time**](https://generic-account.github.io/rankings) - US News national college rankings over time, through 2026.
 - [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) - Network-theoretic synonym maps and exploration of semantic neighborhoods.
-  
+
 ---
 
 ## [A Few of My Favorite Things](https://generic-account.github.io/papers_list)
