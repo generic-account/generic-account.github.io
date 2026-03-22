@@ -1,5 +1,6 @@
 # A Few of My Favorite Things I've Read
 
+## Technical
 - [Python Design Patterns](https://python-patterns.guide/)
 - [Producing wrong data without doing anything obviously wrong!](https://dl.acm.org/doi/10.1145/1508284.1508275)
 - [Inside vLLM: Anatomy of a High-Throughput LLM Inference System](https://www.aleksagordic.com/blog/vllm)
@@ -20,7 +21,10 @@
 - [Open SSF's Compiler Options Hardening Guide for C and C++](https://best.openssf.org/Compiler-Hardening-Guides/Compiler-Options-Hardening-Guide-for-C-and-C++.html)
 - [NUMA Deep Dive](https://frankdenneman.nl/posts/2016-07-06-introduction-2016-numa-deep-dive-series/)
 - [WikiChip's Look At The AMD Zen 2 Core](https://fuse.wikichip.org/news/2458/a-look-at-the-amd-zen-2-core/)
-- [Finger Ring Lore, by William Jones](https://www.gutenberg.org/files/43707/43707-h/43707-h.htm)
+
+## Non-technical
+- [**Finger Ring Lore, by William Jones**](https://www.gutenberg.org/files/43707/43707-h/43707-h.htm)
+- [**Book of Lamentations, by Sam Kriss**](https://thenewinquiry.com/book-of-lamentations/)
 
 <!-- 
 ## ECE 8803 - Spring 2025 Reading List
