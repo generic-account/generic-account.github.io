@@ -16,6 +16,8 @@ Outside of school I enjoy language learning, amateur radio, music, nature, and r
 - [**TinyIR**](https://github.com/generic-account/tinyir-lang) - Functional Python GPU IR, with JAX, Numpy, Torch.func, and other backends.
 - [**Split Stenography Keyboard**](https://github.com/generic-account/split-steno-keyboard) - Custom low profile split keyboard for stenography and standard QWERTY layout.
 - **MLGO Peephole Superoptimizer for LLVM IR (Coming Soon)** - Automatic policy-value guided MCTS search for rewrites, verified with Alive2.
+- **M1 Secret Enable on Linux (Coming Soon)** - Enable and reverse engineer behavior of undocumented ISA extensions for Apple silicon, used for implementing Rosetta 2 fast user space x86 emulation. 
+- **Apple optimized FEX-Emu (Coming Soon)** - Implementing some Rosetta 2 optimizations into FEX-Emu, using reverse engineered Apple silicon x86 emulation hardware support.
 
 ### ML / Game AI / NLP
 
