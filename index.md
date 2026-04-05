@@ -11,7 +11,7 @@ Outside of school I enjoy language learning, amateur radio, music, nature, and r
 
 ### Hardware / Systems
 
-- [**ParaDPLL**](https://generic-account.github.io/ParaDPLL_Final_Report-1.pdf) - FPGA SAT Solver written in SystemVerilog for 6.205 final project, somewhat optimized.
+- [**ParaDPLL**](https://generic-account.github.io/ParaDPLL_Final_Report-1.pdf) - FPGA SAT Solver written in SystemVerilog for 6.205 final project.
 - [**M1 Secret Extension Enabler**](https://github.com/generic-account/m1-secret-extension-enable-linux/tree/master) - Kernel module that enables undocumented Apple Silicon ISA extensions on Linux, used for implementing Rosetta 2 fast userspace x86 emulation.
 - [**Finesse**](https://github.com/generic-account/finesse) -  Python FSM eDSL and toolkit including visualzation, optimization, and SystemVerilog codegen (used to make ParaDPLL visualizations).
 - [**TinyIR**](https://github.com/generic-account/tinyir-lang) - Functional Python GPU IR, with JAX, Numpy, Torch.func, and other backends.
