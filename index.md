@@ -15,7 +15,6 @@ Outside of school I enjoy language learning, amateur radio, music, nature, and r
 - [**M1 Secret Extension Enabler**](https://github.com/generic-account/m1-secret-extension-enable-linux/tree/master) - Kernel module that enables undocumented Apple Silicon ISA extensions on Linux, used for implementing Rosetta 2 fast userspace x86 emulation.
 - [**Finesse**](https://github.com/generic-account/finesse) -  Python FSM eDSL and toolkit including visualzation, optimization, and SystemVerilog codegen (used to make ParaDPLL visualizations).
 - [**TinyIR**](https://github.com/generic-account/tinyir-lang) - Functional Python GPU IR, with JAX, Numpy, Torch.func, and other backends.
-- [**Split Stenography Keyboard**](https://github.com/generic-account/split-steno-keyboard) - Custom low profile split keyboard for stenography and standard QWERTY layout.
 - **Apple optimized FEX-Emu (Coming Soon)** - Implementing some Rosetta 2 optimizations into FEX-Emu, using reverse engineered Apple silicon x86 emulation hardware support.
 <!-- - **MLGO Peephole Superoptimizer for LLVM IR (Coming Soon)** - Automatic policy-value guided MCTS search for rewrites, verified with Alive2. -->
 
@@ -41,6 +40,7 @@ Outside of school I enjoy language learning, amateur radio, music, nature, and r
 ### Random
 - [**Speedy Voice Space**](https://github.com/generic-account/speedy-voice-space) - Real-time pitch and formant/resonance tracking, with praat, noise reduction, and 2D plots.
 - [**Interactive Hayes Feature Chart**](https://generic-account.github.io/interactive-hayes-feature-chart/) - An interactive phonological feature chart based on Hayes' 2009 Introductory Phonology
+- [**Split Stenography Keyboard**](https://github.com/generic-account/split-steno-keyboard) - Custom low profile split keyboard for stenography and standard QWERTY layout.
 - [**College Rankings over Time**](https://generic-account.github.io/rankings) - US News national college rankings over time, through 2026.
 - [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) - Network-theoretic synonym maps and exploration of semantic neighborhoods.
 
