@@ -23,7 +23,7 @@ Outside of school I enjoy language learning, amateur radio, music, nature, and r
 - [**SigmaGo**](https://github.com/generic-account/sigma_go) - AlphaZero-style Go playing ML model integrating minimax + MCTS + policy value neural networks.
 - [**MuZero for Arimaa**](https://github.com/generic-account/muzero-general-arimaa) - Python Arimaa implementation for training MuZero-based model.
 - [**Esperanto Morphological Tokenization**](https://generic-account.github.io/Esperanto-Morphological-Tokenization) - Markov model-based semantic tokenization for Esperanto.
-- [**OCR Accuracy Metrics Without Ground Truth**](https://generic-account.github.io/OCR-Accuracy-Without-Ground-Truth-Data) - Quantifies OCR performance using proxy metrics.
+- [**OCR Accuracy Metrics Without Ground Truth**](https://generic-account.github.io/OCR-Accuracy-Without-Ground-Truth-Data) - Proxy metrics for OCR quality.
 - [**Embedding-based Search & Visualizations**](https://generic-account.github.io/embedding-search-and-visualizations) - Embedding search, dimensionality reduction, and interactive exploration.
 - [**AWS SageMaker & User Management Workshop**](https://generic-account.github.io/Sagemaker-hello-world-2) - Hands-on notebooks introducing AWS SageMaker workflow and setup.
 - [**AWS Textract & Comprehend Workshop**](https://generic-account.github.io/Amazon-Textract-Workshop) - Hands-on workshop tutorial on document data extraction for UCSF.
