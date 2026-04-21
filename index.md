@@ -1,5 +1,5 @@
 
-Welcome! I’m an MIT sophomore studying Electrical Engineering & Computer Science (6-5) and Mathematics (18), minoring in Linguistics (24). I focus on programming languages and computer architecture, with interests in performance engineering, compilers, ML, and numerical methods. I especially like making Python eDSLs, and I've recently gotten slightly obsessed with Asahi Linux, Nix, and Apple silicon.
+Welcome! I’m an MIT sophomore studying Electrical Engineering & Computer Science (6-5) and Mathematics (18), minoring in Linguistics (24). I focus on programming languages and computer architecture, with interests in performance engineering, compilers, ML, and numerical methods. I like making Python eDSLs, and I've recently gotten slightly obsessed with Asahi Linux, microarchitecture reverse engineering, and Apple silicon.
 
 
 Outside of school I enjoy language learning, amateur radio, music, nature, and reading.
@@ -16,6 +16,7 @@ Outside of school I enjoy language learning, amateur radio, music, nature, and r
 - [**Finesse**](https://github.com/generic-account/finesse) -  Python FSM eDSL and toolkit including visualzation, optimization, and SystemVerilog codegen (used to make ParaDPLL visualizations).
 - [**TinyIR**](https://github.com/generic-account/tinyir-lang) - Functional Python GPU IR, with JAX, Numpy, Torch.func, and other backends.
 - **Apple optimized FEX-Emu (Coming Soon)** - Implementing some Rosetta 2 optimizations into FEX-Emu, using reverse engineered Apple silicon x86 emulation hardware support.
+- **Prefetch Research (Coming Soon)** - Researching builtin prefetch behavior and fine-grained cache line control on various microarchitectures.
 <!-- - **MLGO Peephole Superoptimizer for LLVM IR (Coming Soon)** - Automatic policy-value guided MCTS search for rewrites, verified with Alive2. -->
 
 ### ML
