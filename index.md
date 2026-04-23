@@ -40,7 +40,7 @@ Outside of school I enjoy language learning, amateur radio, music, nature, and r
 - **Bit Hacks Verified (Coming Soon)** - Formal verification of bit hacks and optimizations in Rocq.
 
 ### Random
-- [**Speedy Voice Space**](https://github.com/generic-account/speedy-voice-space) - Real-time pitch and formant/resonance tracking, with praat, noise reduction, and 2D plots.
+- [**Speedy Voice Space**](https://github.com/generic-account/speedy-voice-space) - Real-time visualizations for pitch and formant/resonance tracking.
 - [**Interactive Hayes Feature Chart**](https://generic-account.github.io/interactive-hayes-feature-chart/) - An interactive phonological feature chart based on Hayes' 2009 Introductory Phonology
 - [**Split Stenography Keyboard**](https://github.com/generic-account/split-steno-keyboard) - Custom low profile split keyboard for stenography and standard QWERTY layout.
 - [**College Rankings over Time**](https://generic-account.github.io/rankings) - US News national college rankings over time, through 2026.
