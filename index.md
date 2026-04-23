@@ -32,7 +32,7 @@ Outside of school I enjoy language learning, amateur radio, music, nature, and r
 
 ### Math
 
-- [**Interval Arithmetic**](https://github.com/generic-account/interval-arithmetic) - Library for interval arithmetic (finding the ranges of functions), using custom Taylor series patchwork, arbitrary degree autodiff, compilation, efficient patch caching.
+- [**Interval Arithmetic**](https://github.com/generic-account/interval-arithmetic) - Library to estimating function ranges, using custom Taylor series patchwork compilation, arbitrary degree autodiff, and efficient patch caching.
 - [**Random Polynomial Toolkit**](https://github.com/generic-account/random-polynomials) - Framework for generating, analyzing, and visualizing random polynomial ensembles.
 - [**High Dimensional Probability Primer**](https://generic-account.github.io/HDP_Primer.pdf) - Primer on key high dimensional probability concepts, from MIT 2026 DRP talk.
 - [**Dice DSL**](https://github.com/generic-account/dice-dsl) - DSL describing probabilistic game rules, automatically solving for optimal play, with efficient decision-tree codegen.
