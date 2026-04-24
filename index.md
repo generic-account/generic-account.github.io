@@ -13,12 +13,12 @@ Outside of school I enjoy language learning, amateur radio, music, nature, and r
 
 - [**ParaDPLL**](https://generic-account.github.io/ParaDPLL_Final_Report-1.pdf) - FPGA SAT Solver written in SystemVerilog for 6.205 final project.
 - [**M1 Undocumented Extension Enabler**](https://github.com/generic-account/m1-secret-extension-enable-linux/tree/master) - Kernel module enabling undocumented Apple ARM64 ISA extensions on Linux, used to implementing Rosetta 2 fast userspace x86 emulation.
+- [**Memory Ordering Instructions**](https://generic-account.github.io/Memory_Ordering_Instructions_in_Intel_x86_64_and_ARMv8_A.pdf) - A writeup on explicit memory ordering instructions on Intel x86 64 and ARMv8-A+.
 - [**Finesse**](https://github.com/generic-account/finesse) -  Python FSM eDSL and toolkit including visualzation, optimization, and SystemVerilog codegen (used to make ParaDPLL visualizations).
 - [**TinyIR**](https://github.com/generic-account/tinyir-lang) - Functional Python GPU IR, with JAX, Numpy, Torch.func, and other backends.
 - **Apple optimized FEX-Emu (Coming Soon)** - Implementing some Rosetta 2 optimizations into FEX-Emu, using reverse engineered Apple silicon x86 emulation hardware support.
 - **Prefetch Research (Coming Soon)** - Researching builtin prefetch behavior and fine-grained cache line control on various microarchitectures.
 <!-- - **MLGO Peephole Superoptimizer for LLVM IR (Coming Soon)** - Automatic policy-value guided MCTS search for rewrites, verified with Alive2. -->
-<!-- - [**Memory Ordering Instructions**](https://generic-account.github.io/Memory_Ordering_Instructions_in_Intel_x86_64_and_ARMv8_A-1.pdf) - A writeup on explicit memory ordering instructions on Intel x86 64 and ARMv8-A+. -->
 
 ### ML
 
