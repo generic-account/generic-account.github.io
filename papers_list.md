@@ -22,6 +22,7 @@
 - [NUMA Deep Dive](https://frankdenneman.nl/posts/2016-07-06-introduction-2016-numa-deep-dive-series/)
 - [WikiChip's Look At The AMD Zen 2 Core](https://fuse.wikichip.org/news/2458/a-look-at-the-amd-zen-2-core/)
 - [Intel SGX Explained (also an amazing primer on computer architecture)](https://eprint.iacr.org/2016/086.pdf)
+- [The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer/)
 
 ## Non-technical
 - [**Finger Ring Lore, by William Jones**](https://www.gutenberg.org/files/43707/43707-h/43707-h.htm)
