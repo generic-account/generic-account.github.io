@@ -23,11 +23,11 @@
 - [The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer/)
 
 ## Non-technical
-- [**The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
-- [**The Hardware Lottery**](https://hardwarelottery.github.io/)
-- [**Finger Ring Lore, by William Jones**](https://www.gutenberg.org/files/43707/43707-h/43707-h.htm)
+- [The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
+- [The Hardware Lottery](https://hardwarelottery.github.io/)
+- [Finger Ring Lore, by William Jones](https://www.gutenberg.org/files/43707/43707-h/43707-h.htm)
 - [Max Dama on Automated Trading](http://isomorphisms.sdf.org/maxdama.pdf)
-- [**Book of Lamentations, by Sam Kriss**](https://thenewinquiry.com/book-of-lamentations/)
+- [Book of Lamentations, by Sam Kriss](https://thenewinquiry.com/book-of-lamentations/)
 
 <!-- 
 ## ECE 8803 - Spring 2025 Reading List
