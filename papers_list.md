@@ -15,9 +15,7 @@
 - [The Architecture of Open Source Applications](https://aosabook.org/en/)
 - [From Hardware Description Languages to Accelerator Design Languages](https://www.cs.cornell.edu/~asampson/blog/adl.html)
 - [Breaking the x86 ISA](https://raw.githubusercontent.com/xoreaxeaxeax/sandsifter/master/references/domas_breaking_the_x86_isa_wp.pdf)
-- [Max Dama on Automated Trading](http://isomorphisms.sdf.org/maxdama.pdf)
 - [What every systems programmer should know about concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
-- [Feynman Lectures on Physics](https://www.feynmanlectures.caltech.edu/)
 - [Open SSF's Compiler Options Hardening Guide for C and C++](https://best.openssf.org/Compiler-Hardening-Guides/Compiler-Options-Hardening-Guide-for-C-and-C++.html)
 - [NUMA Deep Dive](https://frankdenneman.nl/posts/2016-07-06-introduction-2016-numa-deep-dive-series/)
 - [WikiChip's Look At The AMD Zen 2 Core](https://fuse.wikichip.org/news/2458/a-look-at-the-amd-zen-2-core/)
@@ -28,6 +26,7 @@
 - [**The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
 - [**The Hardware Lottery**](https://hardwarelottery.github.io/)
 - [**Finger Ring Lore, by William Jones**](https://www.gutenberg.org/files/43707/43707-h/43707-h.htm)
+- [Max Dama on Automated Trading](http://isomorphisms.sdf.org/maxdama.pdf)
 - [**Book of Lamentations, by Sam Kriss**](https://thenewinquiry.com/book-of-lamentations/)
 
 <!-- 
