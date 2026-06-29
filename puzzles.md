@@ -4,6 +4,8 @@ I think puzzles are a great way to learn. They have fast feedback loops, often b
 
 Although entirely online resources might not always build familiarity with real-world tooling, I think the lower friction they provide (especially to beginners) is worth this tradeoff. Most puzzle set aim to provide an engaging path for beginners to quickly get started, not be an enitre curriculum. Low friction puzzles are a good way of stripping away some tooling complexity and building fundamental skills, with follow up projects providing experience with real-world tooling.
 
+I'll add to this list as I encounter more relevant resources online (mostly focused on theorem proving, games, and erformance engineering), and I welcome suggestions in the form of a PR.
+
 ## Entirely online
 - [Lean Game Server](https://adam.math.hhu.de/)
 - [WebGPU Puzzles](https://gpupuzzles.answer.ai/)
