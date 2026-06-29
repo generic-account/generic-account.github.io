@@ -42,6 +42,7 @@ Outside of school I enjoy language learning, amateur radio, music, nature, and r
 ### Random
 - [**Speedy Voice Space**](https://generic-account.github.io/speedy-voice-space/) - Real-time visualizations for pitch and formant/resonance tracking.
 - [**Interactive Hayes Feature Chart**](https://generic-account.github.io/interactive-hayes-feature-chart/) - An interactive phonological feature chart based on Hayes' 2009 Introductory Phonology
+- [**Puzzles**](https://generic-account.github.io/puzzles) - A list of interactive puzzles to learn things (theorem proving, game playing, performance engineering).
 - [**Split Stenography Keyboard**](https://github.com/generic-account/split-steno-keyboard) - Custom low profile split keyboard for stenography and standard QWERTY layout.
 - [**College Rankings over Time**](https://generic-account.github.io/rankings) - US News national college rankings over time, through 2026.
 - [**Graphing the English Language**](https://generic-account.github.io/Graphing-the-English-Language) - Network-theoretic synonym maps and exploration of semantic neighborhoods.
